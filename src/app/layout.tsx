@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { josefinSans, josefinSans } from '../../public/fonts';
+import { josefinSans } from '../../public/fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
