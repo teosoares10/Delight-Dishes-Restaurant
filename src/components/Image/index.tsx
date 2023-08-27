@@ -7,6 +7,14 @@ type ImgProps = {
   alt?: string;
 };
 
-export default function Img({ src, width, height, alt }: ImgProps) {
-  return <Image src={src} width={width} height={height} alt={`${alt}`} />;
+export default function Img({ src, width = 300, height = 500, alt }: ImgProps) {
+  return (
+    <Image
+      className="bg-slate-600"
+      src={src}
+      width={width}
+      height={height}
+      alt={`${alt}`}
+    />
+  );
 }
