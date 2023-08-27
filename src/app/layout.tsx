@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { josefinSans } from '../../public/fonts';
+import Header from '@/components/Layouts/Header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={josefinSans.className}>{children}</body>
+      <body className={josefinSans.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
