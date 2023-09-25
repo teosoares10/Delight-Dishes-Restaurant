@@ -1,4 +1,4 @@
-import { services } from '@/db/RestaurantService/services';
+import { services } from '@/db/Local/services';
 import Card from '../Card';
 import IconService from '../Icons/RestaurantServices';
 
