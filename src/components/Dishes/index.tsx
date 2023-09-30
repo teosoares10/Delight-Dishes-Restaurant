@@ -3,7 +3,7 @@ import DishList from './components/List';
 
 export default function Dishes() {
   return (
-    <div className="bg-yellow-800 mt-24 py-8 px-12">
+    <div className="bg-yellow-800 py-24 px-12">
       <div>
         <div className="space-y-8">
           <h1 className="font-bold capitalize">most popular dishes</h1>
