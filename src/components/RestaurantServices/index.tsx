@@ -4,7 +4,7 @@ import ServicesItem from './components/ServicesItem';
 
 export default function RestaurantServices() {
   return (
-    <div className="flex justify-center gap-8 text-center mt-24">
+    <div className="flex justify-between text-center mt-24 px-12">
       {services.map((service) => (
         <ServicesItem
           key={service.id}
