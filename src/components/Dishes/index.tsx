@@ -1,14 +1,24 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import DishList from './components/List';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
 export default function Dishes() {
   return (
-    <div className="bg-yellow-800 py-24 px-12">
-      <div>
+    <div className="bg-yellow-800 py-36 px-12 space-y-8">
+      <div className="flex justify-between items-center">
         <div className="space-y-8">
-          <h1 className="font-bold capitalize">most popular dishes</h1>
-          <p></p>
+          <h1 className="text-4xl font-bold capitalize">most popular dishes</h1>
+          <p className="w-[40rem]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+            quaerat, placeat molestiae provident voluptas enim delectus nulla a?
+            Laudantium odio possimus, a itaque nam in corporis doloribus quis
+            sed nihil!
+          </p>
         </div>
+        <Button className="bg-orange-600 capitalize" variant="link" asChild>
+          <Link href="">full menu</Link>
+        </Button>
       </div>
       <div>
         <Tabs defaultValue="breakfasts">

@@ -1,18 +1,27 @@
 import { services } from '@/db/Local/services';
 import IconService from '../Icons/RestaurantServices';
 import ServicesItem from './components/ServicesItem';
+import { cormorantInfant } from '../../../public/fonts';
 
 export default function RestaurantServices() {
   return (
-    <div className="flex justify-between text-center py-24 px-12">
-      {services.map((service) => (
-        <ServicesItem
-          key={service.id}
-          icon={<IconService icon={service.type} />}
-          title={service.title}
-          description={service.description}
-        />
-      ))}
+    <div className="border-spacing-4 space-y-16 text-center mb-36 px-12">
+      <h1
+        style={cormorantInfant.style}
+        className="text-4xl font-bold capitalize"
+      >
+        catering service
+      </h1>
+      <div className="flex justify-between">
+        {services.map((service) => (
+          <ServicesItem
+            key={service.id}
+            icon={<IconService icon={service.type} />}
+            title={service.title}
+            description={service.description}
+          />
+        ))}
+      </div>
     </div>
   );
 }
