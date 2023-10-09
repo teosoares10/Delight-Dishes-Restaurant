@@ -1,5 +1,5 @@
 import { services } from '@/constants/Local/services';
-import IconService from '../Icons/RestaurantService';
+import IconService from './components/Icons';
 import ServicesItem from './components/ServicesItem';
 import { cormorantInfant } from '../../../public/fonts';
 
