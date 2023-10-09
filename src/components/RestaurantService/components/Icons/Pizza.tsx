@@ -1,3 +1,5 @@
+'use client';
+
 import { PizzaIcon } from 'lucide-react';
 
 export default function Pizza() {

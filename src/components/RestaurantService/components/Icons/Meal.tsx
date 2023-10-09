@@ -1,3 +1,5 @@
+'use client';
+
 import { SaladIcon } from 'lucide-react';
 
 export default function Coffee() {
