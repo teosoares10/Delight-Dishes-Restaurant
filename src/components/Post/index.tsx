@@ -1,4 +1,4 @@
-import { posts } from '@/db/Local/posts';
+import { posts } from '@/constants/Local/posts';
 import PostItem from './components/PostItem';
 import Img from '../Image';
 

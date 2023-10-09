@@ -1,5 +1,5 @@
 import Img from '@/components/Image';
-import dishes from '@/db/Local/dishes';
+import dishes from '@/constants/Local/dishes';
 import DishItem from './DishItem';
 
 export default function DishList({ category }: { category: string }) {

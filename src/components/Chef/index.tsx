@@ -1,5 +1,5 @@
 import Img from '@/components/Image';
-import chefs from '@/db/Local/chefs';
+import chefs from '@/constants/Local/chefs';
 import ChefItem from './components/ChefItem';
 import { cormorantInfant } from '../../../public/fonts';
 

@@ -1,4 +1,4 @@
-import { services } from '@/db/Local/services';
+import { services } from '@/constants/Local/services';
 import IconService from '../Icons/RestaurantService';
 import ServicesItem from './components/ServicesItem';
 import { cormorantInfant } from '../../../public/fonts';
