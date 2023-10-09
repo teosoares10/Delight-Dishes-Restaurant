@@ -3,7 +3,7 @@ import Chef from '@/components/Chefs';
 import RestaurantServices from '@/components/RestaurantServices';
 import OurStory from '@/components/OurStory';
 import Banner from '@/components/Banner';
-import Posts from '@/components/Posts';
+import Posts from '@/components/Post';
 
 export default function Home() {
   return (
