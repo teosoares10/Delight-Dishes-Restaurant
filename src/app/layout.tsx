@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { josefinSans } from '../../public/fonts';
 import Header from '@/components/Layouts/Header';
+import Footer from '@/components/Layouts/Footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={josefinSans.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
