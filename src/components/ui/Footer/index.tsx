@@ -1,6 +1,6 @@
 import ContactUs from './components/ContactUs';
 import OpenTime from './components/OpenTime';
-import Instagram from './components/Instagram';
+import Instagram from './components/SocialNetwork';
 import About from './components/About';
 import Menu from './components/Menu';
 import Copyright from './components/Copyright';
