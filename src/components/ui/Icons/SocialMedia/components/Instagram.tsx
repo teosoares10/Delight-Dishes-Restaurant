@@ -1,12 +1,10 @@
-'use client';
-
-import { InstagramIcon } from 'lucide-react';
+import { InstagramLogo } from '@phosphor-icons/react';
 import Link from 'next/link';
 
-export default function InstagramLogo({ link }: { link: string }) {
+export default function InstagramIcon({ link }: { link: string }) {
   return (
-    <Link href={`${link}`}>
-      <InstagramIcon className="hover:text-orange-600" size={24} />
+    <Link href={`${link}`} data-testid="instagram-link">
+      <InstagramLogo className="hover:text-orange-600" size={24} />
     </Link>
   );
 }
