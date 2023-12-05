@@ -6,7 +6,7 @@ import Chef from '@/components/ui/Chef';
 import Dishes from '@/components/ui/Dish';
 import OurStory from '@/components/ui/OurStory';
 import Head from 'next/head';
-import { ChefApiResponse, ChefAttributes } from 'type';
+import { ChefApiResponse, ChefAttributes } from '@/@types/type';
 
 export default function Home({ attributes }: ChefApiResponse) {
   return (
