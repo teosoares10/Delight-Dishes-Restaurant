@@ -4,11 +4,12 @@
         "es2021": true
     },
     "settings": {
-        "react": {
-            "version": "detect"
+        "next": {
+            "rootDir": "packages/restaurant_next"
         }
     },
     "extends": [
+        "next/core-web-vitals",
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
