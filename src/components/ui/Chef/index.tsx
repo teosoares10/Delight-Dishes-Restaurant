@@ -1,7 +1,7 @@
-import Img from '@/components/Image';
-import chefs from '@/constants/Local/chefs';
-import ChefItem from './components/ChefItem';
-import { cormorantInfant } from '../../../public/fonts';
+import Img from '@/components/ui/Image';
+import Title from '@/components/ui/Typography/Title';
+import { ChefApiResponse, ChefAttributes } from '@/@types/type';
+import SocialMedia from '@/components/ui/Icons/SocialMedia';
 
 export default function Chef() {
   return (
