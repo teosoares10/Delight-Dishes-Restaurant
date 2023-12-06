@@ -3,7 +3,7 @@ import Title from '@/components/ui/Typography/Title';
 import { ChefApiResponse, ChefAttributes } from '@/@types/type';
 import SocialMedia from '@/components/ui/Icons/SocialMedia';
 
-export default function Chef() {
+export default function Chef({ attributes }: ChefApiResponse) {
   return (
     <div className="space-y-16 py-36 px-12">
       <h1
