@@ -27,7 +27,7 @@ export default function Home({ attributes }: ChefApiResponse) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/chefs?populate=*`,
     {
