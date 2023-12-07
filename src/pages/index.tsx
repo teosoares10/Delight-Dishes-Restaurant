@@ -42,6 +42,7 @@ export async function getStaticProps() {
     ({ attributes }: ChefApiResponse) => attributes
   );
   return {
-    props: { attributes }
+    props: { attributes },
+    revalidate: 1
   };
 }
