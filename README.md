@@ -1,6 +1,6 @@
-## Restaurant
+## Dilight Dishes Restaurant
 
-It is a website where you can book a table for a breakfast, dinner and more.
+Welcome to Flavors Unleashed, a culinary journey that brings the world of exquisite dining to your fingertips. This web application is designed to provide a delightful and seamless experience for restaurant management and culinary exploration.
 
 ## Getting Started
 
