@@ -3,7 +3,7 @@ import Text from '@/components/ui/Typography/Text';
 import Title from '@/components/ui/Typography/Title';
 import { Button } from '@/components/ui/button';
 
-export default function Banner() {
+export default function Hero() {
   return (
     <div className="h-screen flex justify-between items-center pt-4 px-12">
       <div className="space-y-8">
