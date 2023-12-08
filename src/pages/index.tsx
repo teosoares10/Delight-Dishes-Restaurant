@@ -1,6 +1,6 @@
 import Posts from '@/components/Post';
 import RestaurantServices from '@/components/RestaurantService';
-import Banner from '@/components/ui/Banner';
+import Hero from '@/components/ui/Hero';
 import BookTable from '@/components/ui/BookTable';
 import Chef from '@/components/ui/Chef';
 import Dishes from '@/components/ui/Dish';
@@ -15,7 +15,7 @@ export default function Home({ attributes }: ChefApiResponse) {
         <title>Teodoro Eliesel Pedro - Restaurant</title>
       </Head>
       <main>
-        <Banner />
+        <Hero />
         <OurStory />
         <RestaurantServices />
         <Dishes />
