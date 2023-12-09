@@ -6,12 +6,15 @@ import { Button } from '@/components/ui/button';
 export default function Hero() {
   return (
     <div className="h-screen flex justify-between items-center pt-4 px-12">
-      <div className="space-y-8">
-        <Title className="tracking-[1.8rem] text-8xl uppercase">welcome</Title>
+      <div className="space-y-8 w-[35rem]">
+        <Title className="tracking-[.5rem] text-4xl text-left uppercase">
+          Delight Dishes: A Culinary Odyssey
+        </Title>
         <Text className="w-[35rem]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, culpa
-          possimus? Eum dolorem, a excepturi ipsum optio in molestiae ullam hic,
-          suscipit officia distinctio ipsam sequi. Vitae vel labore quam.
+          Embark on a gastronomic journey like never before at Flavors
+          Unleashed, where passion meets palate. Our restaurant is a celebration
+          of diverse tastes, artfully curated to transport you to culinary
+          realms that ignite your senses.
         </Text>
         <Button
           className="w-40 bg-orange-500 capitalize"
