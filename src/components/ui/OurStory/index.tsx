@@ -13,8 +13,12 @@ export default function OurStory() {
       <div className="space-y-8">
         <Title className="text-4xl text-left">our story</Title>
         <Text className="w-[35rem]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus
-          doloremque nesciunt eos earum cumque est...
+          Born from a passion for culinary excellence, our story began with a
+          dream to redefine dining. Every dish tells a tale of creativity and
+          craftsmanship, inviting you on a journey through flavor. From humble
+          beginnings to a gastronomic haven, our story is a celebration of the
+          extraordinary in every bite. Join us in creating memories, one
+          extraordinary meal at a time.
         </Text>
         <Button className="capitalize bg-orange-600" asChild>
           <Link href={``} data-testid="link">
