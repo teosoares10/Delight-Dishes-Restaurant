@@ -23,8 +23,10 @@ export default function ServicesItem({
       )}
       data-testid="service-item"
     >
-      {icon ? icon : <span>Icon</span>}
-      <Title className="text-xl mt-4">{title}</Title>
+      <div className="flex">
+        {icon ? icon : <span>Icon</span>}
+        <Title className="text-xl mt-4">{title}</Title>
+      </div>
       <Text>{description}</Text>
     </div>
   );
