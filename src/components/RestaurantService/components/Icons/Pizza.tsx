@@ -1,7 +1,5 @@
-'use client';
+import { Pizza } from '@phosphor-icons/react/dist/ssr';
 
-import { PizzaIcon } from 'lucide-react';
-
-export default function Pizza() {
-  return <PizzaIcon size={64} />;
+export default function PizzaIcon() {
+  return <Pizza size={76} data-testid="icon-pizza" />;
 }
