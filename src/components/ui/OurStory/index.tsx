@@ -27,20 +27,12 @@ export default function OurStory() {
         </Button>
       </div>
 
-      <div className="flex gap-4">
-        <Img
-          src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-          width={350}
-          height={450}
-          alt=""
-        />
-        <Img
-          src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-          width={350}
-          height={450}
-          alt=""
-        />
-      </div>
+      <Img
+        src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+        width={350}
+        height={450}
+        alt=""
+      />
     </div>
   );
 }
