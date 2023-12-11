@@ -1,4 +1,4 @@
-import Posts from '@/components/Post';
+import Posts from '@/components/ui/Post';
 import RestaurantServices from '@/components/RestaurantService';
 import Hero from '@/components/ui/Hero';
 import BookTable from '@/components/ui/BookTable';
