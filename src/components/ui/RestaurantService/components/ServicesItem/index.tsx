@@ -18,7 +18,7 @@ export default function ServicesItem({
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center w-[23rem] h-[23rem] space-y-4 px-14 py-8 border border-orange-400 shadow-md hover:shadow-lg hover:shadow-orange-500 hover:border-0 transition-shadow duration-500',
+        'flex flex-col items-center justify-center w-[18rem] h-[18rem] space-y-2 px-4 py-4 border-orange-400 border',
         className
       )}
       data-testid="service-item"
