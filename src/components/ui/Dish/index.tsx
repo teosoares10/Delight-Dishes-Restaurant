@@ -1,29 +1,39 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import DishList from './components/List';
-import { Button } from '../ui/button';
+import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import DishList from './components/List';
+import Title from '@/components/ui/Typography/Title';
+import Text from '@/components/ui/Typography/Text';
 
 export default function Dishes() {
   return (
-    <div className="bg-yellow-800 py-36 px-12 space-y-8">
+    <div className="bg-orange-900 py-36 px-12 space-y-8">
       <div className="flex justify-between items-center">
         <div className="space-y-8">
-          <h1 className="text-4xl font-bold capitalize">most popular dishes</h1>
-          <p className="w-[40rem]">
+          <Title className="text-4xl text-white text-left">
+            most popular dishes
+          </Title>
+          <Text className="w-[40rem] text-white/80">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
             quaerat, placeat molestiae provident voluptas enim delectus nulla a?
             Laudantium odio possimus, a itaque nam in corporis doloribus quis
             sed nihil!
-          </p>
+          </Text>
         </div>
-        <Button className="bg-orange-600 capitalize" variant="link" asChild>
-          <Link href="">full menu</Link>
+        <Button
+          className="bg-orange-600 hover:bg-transparent hover:border hover:border-white text-white capitalize px-12 rounded-full"
+          variant="link"
+          asChild
+        >
+          <Link href="/ourMenu" className="text-base py-4">
+            full menu
+          </Link>
         </Button>
       </div>
       <div>
         <Tabs defaultValue="breakfasts">
-          <div className="mb-8 border-b-4">
-            <TabsList>
+          <div className="mb-8 border-b border-orange-400 pb-0">
+            <TabsList className="space-x-4 text-white pb-0">
               <TabsTrigger value="breakfasts">breakfast</TabsTrigger>
               <TabsTrigger value="lunchs">lunchs</TabsTrigger>
               <TabsTrigger value="dinners">dinner</TabsTrigger>
