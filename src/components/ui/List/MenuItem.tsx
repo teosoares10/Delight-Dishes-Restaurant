@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { NavigationMenuLink } from '../ui/navigation-menu';
+import { NavigationMenuLink } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
 
 const MenuItem = React.forwardRef<
