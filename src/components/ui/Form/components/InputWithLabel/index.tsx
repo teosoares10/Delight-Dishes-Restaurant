@@ -14,7 +14,7 @@ const InputWithLabel = forwardRef<HTMLInputElement, InputWithIconProps>(
   ({ className, label, type, placeholder }: InputWithIconProps, ref) => {
     return (
       <div
-        className={cn('p-2 border-white', className)}
+        className={cn('border-white', className)}
         data-testid="input-with-icon"
       >
         <Label htmlFor={label} className="capitalize mb-2 font-bold text-white">
