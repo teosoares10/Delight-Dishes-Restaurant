@@ -1,8 +1,8 @@
 import { posts } from '@/constants/Local/posts';
 import Link from 'next/link';
 import Img from '@/components/ui/Image';
-import Title from '../ui/Typography/Title';
-import Text from '../ui/Typography/Text';
+import Title from '@/components/ui/Typography/Title';
+import Text from '@/components/ui/Typography/Text';
 
 export default function Posts() {
   return (
