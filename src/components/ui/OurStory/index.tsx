@@ -10,6 +10,12 @@ export default function OurStory() {
       className="flex justify-between items-center py-36 px-12"
       data-testid="our-story"
     >
+      <Img
+        src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+        width={350}
+        height={450}
+        alt=""
+      />
       <div className="space-y-8">
         <Title className="text-4xl text-left">our story</Title>
         <Text className="w-[35rem]">
@@ -26,13 +32,6 @@ export default function OurStory() {
           </Link>
         </Button>
       </div>
-
-      <Img
-        src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-        width={350}
-        height={450}
-        alt=""
-      />
     </div>
   );
 }
