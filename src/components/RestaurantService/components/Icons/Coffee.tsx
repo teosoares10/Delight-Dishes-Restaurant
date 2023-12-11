@@ -1,7 +1,5 @@
-'use client';
+import { Coffee } from '@phosphor-icons/react';
 
-import { CoffeeIcon } from 'lucide-react';
-
-export default function Coffee() {
-  return <CoffeeIcon size={64} />;
+export default function CoffeeIcon() {
+  return <Coffee size={76} data-testid="icon-coffee" />;
 }
