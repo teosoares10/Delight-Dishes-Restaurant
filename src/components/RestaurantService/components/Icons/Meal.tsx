@@ -1,7 +1,5 @@
-'use client';
+import { BowlFood } from '@phosphor-icons/react';
 
-import { SaladIcon } from 'lucide-react';
-
-export default function Coffee() {
-  return <SaladIcon size={64} />;
+export default function MealIcon() {
+  return <BowlFood size={76} data-testid="icon-salad" />;
 }
