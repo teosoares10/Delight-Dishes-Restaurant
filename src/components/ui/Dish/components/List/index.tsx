@@ -1,4 +1,4 @@
-import Img from '@/components/Image';
+import Img from '@/components/ui/Image';
 import dishes from '@/constants/Local/dishes';
 import DishItem from './DishItem';
 
