@@ -24,7 +24,7 @@ export default function Hero() {
           view menu
         </Button>
       </div>
-      <div className="w-[30rem] bg-gray-500">
+      <div className="w-[40rem] h-[30rem] bg-gray-500">
         <Img
           className="w-full h-full"
           src="https://images.unsplash.com/photo-1484659619207-9165d119dafe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
