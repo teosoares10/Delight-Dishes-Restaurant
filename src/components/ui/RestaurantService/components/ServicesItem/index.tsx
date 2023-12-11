@@ -18,16 +18,16 @@ export default function ServicesItem({
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center w-[18rem] h-[18rem] space-y-2 px-4 py-4 border-orange-400 border',
+        'flex flex-col justify-center w-[24rem] h-[14rem] space-y-2 px-4 py-2 border-orange-400 border',
         className
       )}
       data-testid="service-item"
     >
-      <div className="flex">
+      <div className="flex items-center space-x-4">
         {icon ? icon : <span>Icon</span>}
-        <Title className="text-xl mt-4">{title}</Title>
+        <Title className="text-xl">{title}</Title>
       </div>
-      <Text>{description}</Text>
+      <Text className="text-left">{description}</Text>
     </div>
   );
 }
