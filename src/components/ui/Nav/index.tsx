@@ -6,39 +6,63 @@ import Link from 'next/link';
 export default function NavBar({ className }: { className?: string }) {
   return (
     <>
-      <ul className={cn('flex gap-4', className)}>
+      <ul className={cn('flex gap-4', className)} data-testid="nav-bar">
         <li>
-          <Link className="hover:text-orange-600" href="/">
+          <Link className="hover:text-orange-600" href="/" data-testid="link">
             Home
           </Link>
         </li>
         <li>
-          <Link className="hover:text-orange-600" href="/aboutUs">
+          <Link
+            className="hover:text-orange-600"
+            href="/aboutUs"
+            data-testid="link"
+          >
             About Us
           </Link>
         </li>
         <li>
-          <Link className="hover:text-orange-600" href="/ourMenu">
+          <Link
+            className="hover:text-orange-600"
+            href="/ourMenu"
+            data-testid="link"
+          >
             Our Menu
           </Link>
         </li>
         <li>
-          <Link className="hover:text-orange-600" href="/gallery">
+          <Link
+            className="hover:text-orange-600"
+            href="/gallery"
+            data-testid="link"
+          >
             Gallery
           </Link>
         </li>
         <li>
-          <Link className="hover:text-orange-600" href="/recipe">
+          <Link
+            className="hover:text-orange-600"
+            href="/recipe"
+            data-testid="link"
+          >
             Recipe
           </Link>
         </li>
         <li>
-          <Link className="hover:text-orange-600" href="/blog">
+          <Link
+            className="hover:text-orange-600"
+            href="/blog"
+            data-testid="link"
+          >
             Blog
           </Link>
         </li>
         <li>
-          <Link className="hover:text-orange-600" href="/contact">
+          <Link
+            className="hover:text-orange-600"
+            href="/contact"
+            data-testid="link"
+          >
             Contact
           </Link>
         </li>
