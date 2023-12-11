@@ -4,7 +4,7 @@ import ServicesItem from '../ServicesItem';
 
 export default function ServiceList() {
   return (
-    <div className="flex space-x-36 justify-center" data-testid="service-list">
+    <div className="flex  justify-between" data-testid="service-list">
       {services.map((service) => (
         <ServicesItem
           key={service.id}
