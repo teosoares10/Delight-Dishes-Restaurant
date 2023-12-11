@@ -14,10 +14,13 @@ export default function Dishes() {
             most popular dishes
           </Title>
           <Text className="w-[40rem] text-white/80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-            quaerat, placeat molestiae provident voluptas enim delectus nulla a?
-            Laudantium odio possimus, a itaque nam in corporis doloribus quis
-            sed nihil!
+            Discover our culinary stars at the &apos;Most Popular Dishes&apos;.
+            Savor the essence of our kitchen&apos;s triumphs with a curated
+            selection of crowd-favorites that have won hearts and palates alike.
+            From signature dishes to time-tested classics, these culinary gems
+            are sure to tantalize your taste buds and leave you craving for
+            more. Join us in celebrating the essence of flavor that has made
+            these dishes the talk of the town.
           </Text>
         </div>
         <Button
