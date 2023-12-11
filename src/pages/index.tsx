@@ -1,5 +1,5 @@
 import Posts from '@/components/ui/Post';
-import RestaurantServices from '@/components/RestaurantService';
+import RestaurantServices from '@/components/ui/RestaurantService';
 import Hero from '@/components/ui/Hero';
 import BookTable from '@/components/ui/BookTable';
 import Chef from '@/components/ui/Chef';
