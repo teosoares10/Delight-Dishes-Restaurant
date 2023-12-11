@@ -1,13 +1,13 @@
-import Coffee from './Coffee';
-import Pizza from './Pizza';
-import Meal from './Meal';
+import CoffeeIcon from './Coffee';
+import PizzaIcon from './Pizza';
+import MealIcon from './Meal';
 
 export default function IconService({ icon }: { icon: string }) {
   return (
-    <>
-      {icon === 'fastfood' ? <Pizza /> : null}
-      {icon === 'meal' ? <Meal /> : null}
-      {icon === 'coffee' ? <Coffee /> : null}
-    </>
+    <div className="text-orange-600" data-testid="icon-service">
+      {icon === 'fastfood' ? <PizzaIcon /> : null}
+      {icon === 'meal' ? <MealIcon /> : null}
+      {icon === 'coffee' ? <CoffeeIcon /> : null}
+    </div>
   );
 }
