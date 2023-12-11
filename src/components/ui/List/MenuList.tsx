@@ -1,5 +1,3 @@
-'use client';
-
 import * as React from 'react';
 import { NavigationMenuLink } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
