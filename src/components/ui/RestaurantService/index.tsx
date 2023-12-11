@@ -1,27 +1,14 @@
-import { services } from '@/constants/Local/services';
-import IconService from './components/Icons';
-import ServicesItem from './components/ServicesItem';
-import { cormorantInfant } from '../../../public/fonts';
+import Title from '@/components/ui/Typography/Title';
+import ServiceList from '@/components/ui/RestaurantService/components/ServiceList';
 
 export default function RestaurantServices() {
   return (
-    <div className="border-spacing-4 space-y-16 text-center mb-36 px-12">
-      <h1
-        style={cormorantInfant.style}
-        className="text-4xl font-bold capitalize"
-      >
-        catering service
-      </h1>
-      <div className="flex justify-between">
-        {services.map((service) => (
-          <ServicesItem
-            key={service.id}
-            icon={<IconService icon={service.type} />}
-            title={service.title}
-            description={service.description}
-          />
-        ))}
-      </div>
+    <div
+      className="border-spacing-4 space-y-16 text-center mb-36 px-12"
+      data-testid="restaurant-services"
+    >
+      <Title className="text-4xl">catering service</Title>
+      <ServiceList />
     </div>
   );
 }
