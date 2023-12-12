@@ -10,7 +10,7 @@ export default function Posts() {
       <div>
         <Title className="text-4xl">Our Posts</Title>
       </div>
-      <ul className="flex justify-between">
+      <ul className="flex space-x-4">
         {posts.map((post) => (
           <li key={post.id} data-testid="post-item">
             <Img
