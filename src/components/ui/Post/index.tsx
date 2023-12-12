@@ -18,7 +18,7 @@ export default function Posts() {
               src={post.img}
               alt=""
               width={300}
-              height={250}
+              height={100}
             />
             <div className="space-y-4">
               <span data-testid="date">{post.date}</span>
