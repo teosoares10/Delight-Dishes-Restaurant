@@ -11,10 +11,10 @@ export default function Hero() {
           Delight Dishes: A Culinary Odyssey
         </Title>
         <Text className="w-[35rem]">
-          Embark on a gastronomic journey like never before at Flavors
-          Unleashed, where passion meets palate. Our restaurant is a celebration
-          of diverse tastes, artfully curated to transport you to culinary
-          realms that ignite your senses.
+          Embark on a gastronomic journey like never before at Delight Dishes,
+          where passion meets palate. Our restaurant is a celebration of diverse
+          tastes, artfully curated to transport you to culinary realms that
+          ignite your senses.
         </Text>
         <Button
           className="w-40 bg-orange-500 capitalize"
