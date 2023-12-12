@@ -29,7 +29,7 @@ export default function Posts() {
               >
                 {post.title}
               </Link>
-              {post.description ? <Text>{post.description}</Text> : null}
+              <Text>{post.description}</Text>
             </div>
           </li>
         ))}
