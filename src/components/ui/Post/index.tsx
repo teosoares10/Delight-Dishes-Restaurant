@@ -20,7 +20,7 @@ export default function Posts() {
               width={300}
               height={100}
             />
-            <div className="space-y-4">
+            <div className="mt-2 space-y-4">
               <span data-testid="date">{post.date}</span>
               <Link
                 href=""
