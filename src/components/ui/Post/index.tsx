@@ -15,7 +15,7 @@ export default function Posts() {
         {posts.map((post) => (
           <li key={post.id} className="h-[12rem]" data-testid="post-item">
             <Img className="w-full h-full" src={post.img} alt="" />
-            <div className="mt-2 space-y-4">
+            <div className="p-2 space-y-4">
               <span data-testid="date">{post.date}</span>
               <Link
                 href=""
