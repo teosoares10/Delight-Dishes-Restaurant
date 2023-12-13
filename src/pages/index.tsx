@@ -1,4 +1,3 @@
-import Posts from '@/components/ui/Post';
 import RestaurantServices from '@/components/ui/RestaurantService';
 import Hero from '@/components/ui/Hero';
 import BookTable from '@/components/ui/BookTable';
@@ -7,12 +6,13 @@ import Dishes from '@/components/ui/Dish';
 import OurStory from '@/components/ui/OurStory';
 import Head from 'next/head';
 import { ChefApiResponse, ChefAttributes } from '@/@types/type';
+import OurPosts from '@/components/ui/OurPosts';
 
 export default function Home({ attributes }: ChefApiResponse) {
   return (
     <div>
       <Head>
-        <title>Teodoro Eliesel Pedro - Restaurant</title>
+        <title>Delight Dishes - Restaurant</title>
       </Head>
       <main>
         <Hero />
@@ -21,7 +21,7 @@ export default function Home({ attributes }: ChefApiResponse) {
         <Dishes />
         <Chef attributes={attributes} />
         <BookTable />
-        <Posts />
+        <OurPosts />
       </main>
     </div>
   );
