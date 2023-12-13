@@ -7,34 +7,34 @@ import { Button } from '../button';
 
 export default function Posts() {
   return (
-    <div className="px-12 py-24 space-y-16" data-testid="posts">
-      <div>
-        <Title className="text-4xl">Our Posts</Title>
-      </div>
-      <ul className="flex space-x-4">
-        {posts.map((post) => (
-          <li key={post.id} className="h-[12rem]" data-testid="post-item">
-            <Img className="w-full h-full" src={post.img} alt="" />
-            <div className="p-2 space-y-4">
-              <span data-testid="date">{post.date}</span>
+    <ul className="flex space-x-4" data-testid="posts">
+      {posts.map((post) => (
+        <li
+          key={post.id}
+          className="shadow hover:shadow-xl hover:bg-white/50 delay-150 pb-2"
+          data-testid="post-item"
+        >
+          <Img className="w-full h-[12rem]" src={post.img} alt="" />
+          <div className="p-4 space-y-4">
+            <div>
+              <Title className="text-left text-xl">{post.title}</Title>
+              <span className="text-sm" data-testid="date">
+                {post.date}
+              </span>
+            </div>
+            <Text className="text-black/60">{post.description}</Text>
+            <Button className="text-orange-600" variant={'link'} asChild>
               <Link
                 href=""
-                className="block font-bold hover:text-orange-600"
+                className="capitalize bg-orange-600 text-white hover:bg-transparent hover:text-orange-600 hover:border-orange-600 hover:border delay-75 block font-bold"
                 data-testid="link"
               >
-                {post.title}
-              </Link>
-              <Text>{post.description}</Text>
-              <Button
-                className="capitalize hover:text-orange-600 bg-orange-600 text-white hover:bg-transparent hover:border-orange-600 hover:border delay-75"
-                variant={'link'}
-              >
                 read more
-              </Button>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+              </Link>
+            </Button>
+          </div>
+        </li>
+      ))}
+    </ul>
   );
 }
