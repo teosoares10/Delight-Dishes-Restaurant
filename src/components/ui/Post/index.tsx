@@ -7,7 +7,7 @@ import { Button } from '../button';
 
 export default function Posts() {
   return (
-    <ul className="flex space-x-4" data-testid="posts">
+    <ul className="flex space-x-4 flex-wrap" data-testid="posts">
       {posts.map((post) => (
         <li
           key={post.id}
