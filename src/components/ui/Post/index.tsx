@@ -11,7 +11,7 @@ export default function Posts() {
       {posts.map((post) => (
         <li
           key={post.id}
-          className="shadow hover:shadow-xl hover:bg-white/50 delay-150 pb-2"
+          className="w-96 shadow hover:shadow-xl hover:bg-white/50 delay-150 pb-2"
           data-testid="post-item"
         >
           <Img className="w-full h-[12rem]" src={post.img} alt="" />
