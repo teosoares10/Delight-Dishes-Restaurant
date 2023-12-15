@@ -20,7 +20,12 @@ export function CardAction({ text, link, onClick }: CardProps) {
           </Link>
         </Button>
       ) : (
-        <Button onClick={onClick}>{text}</Button>
+        <Button
+          onClick={onClick}
+          className="text-white bg-orange-600 hover:text-orange-600 capitalize"
+        >
+          {text}
+        </Button>
       )}
     </div>
   );
