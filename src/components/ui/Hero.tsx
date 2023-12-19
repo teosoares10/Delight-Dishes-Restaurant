@@ -1,4 +1,4 @@
-import Img from '../Image';
+import Img from './Image';
 import Text from '@/components/ui/Typography/Text';
 import Title from '@/components/ui/Typography/Title';
 import { Button } from '@/components/ui/button';

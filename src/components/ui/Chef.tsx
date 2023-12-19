@@ -1,7 +1,7 @@
 import Title from '@/components/ui/Typography/Title';
 import { ChefApiResponse, ChefAttributes } from '@/@types/type';
 import SocialMedia from '@/components/ui/Icons/SocialMedia';
-import { Card } from '../Card';
+import { Card } from './Card';
 
 export default function Chef({ attributes }: ChefApiResponse) {
   return (

@@ -1,5 +1,5 @@
-import Form from '../Form';
-import Title from '../Typography/Title';
+import Form from './Form';
+import Title from './Typography/Title';
 
 export default function BookTable() {
   return (
