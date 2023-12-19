@@ -1,4 +1,5 @@
 import { CardAction } from './components/CardAction';
+import { CardCategory } from './components/CardCategory';
 import { CardContent } from './components/CardContent';
 import { CardDate } from './components/CardDate';
 import { CardDescription } from './components/CardDescription';
@@ -13,5 +14,6 @@ export const Card = {
   Content: CardContent,
   Action: CardAction,
   Date: CardDate,
-  Description: CardDescription
+  Description: CardDescription,
+  Category: CardCategory
 };
