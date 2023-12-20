@@ -1,5 +1,5 @@
-import Title from '../Typography/Title';
-import OurPostList from './components/OurPostList';
+import Title from './Typography/Title';
+import OurPostList from './OurPostList';
 
 export default function OurPosts() {
   return (
