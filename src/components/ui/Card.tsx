@@ -1,11 +1,11 @@
-import { CardAction } from './components/CardAction';
-import { CardCategory } from './components/CardCategory';
-import { CardContent } from './components/CardContent';
-import { CardDate } from './components/CardDate';
-import { CardDescription } from './components/CardDescription';
-import { CardImg } from './components/CardImg';
-import { CardRoot } from './components/CardRoot';
-import { CardTitle } from './components/CardTitle';
+import { CardAction } from './CardAction';
+import { CardCategory } from './CardCategory';
+import { CardContent } from './CardContent';
+import { CardDate } from './CardDate';
+import { CardDescription } from './CardDescription';
+import { CardImg } from './CardImg';
+import { CardRoot } from './CardRoot';
+import { CardTitle } from './CardTitle';
 
 export const Card = {
   Root: CardRoot,
