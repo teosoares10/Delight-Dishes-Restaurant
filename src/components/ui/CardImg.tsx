@@ -1,4 +1,4 @@
-import Img from '../../Image';
+import Img from './Image';
 
 type CardProps = {
   className?: string;

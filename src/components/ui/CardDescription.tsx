@@ -1,4 +1,4 @@
-import Text from '../../Typography/Text';
+import Text from './Typography/Text';
 
 type CardProps = {
   description: string;
