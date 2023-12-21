@@ -1,6 +1,6 @@
 import Img from './Image';
-import Text from '@/components/ui/Typography/Text';
-import Title from '@/components/ui/Typography/Title';
+import Text from '@/components/ui/Text';
+import Title from '@/components/ui/Title';
 import { Button } from '@/components/ui/button';
 
 export default function Hero() {
