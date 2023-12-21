@@ -1,5 +1,5 @@
 import NavBar from '@/components/ui/Nav';
-import Title from '@/components/ui/Typography/Title';
+import Title from '@/components/ui/Title';
 
 export default function Menu() {
   return (
