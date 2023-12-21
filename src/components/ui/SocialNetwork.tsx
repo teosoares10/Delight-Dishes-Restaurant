@@ -1,23 +1,23 @@
-import FacebookLogo from './components/Facebook';
-import InstagramLogo from './components/Instagram';
-import TwitterLogo from './components/Twitter';
+import FacebookIcon from './FacebookIcon';
+import InstagramIcon from './InstagramIcon';
+import TwitterIcon from './TwitterIcon';
 
-type SocialMediaProps = {
-  facebook: string;
-  instagram: string;
-  twitter: string;
+type SocialNetworkProps = {
+  facebookLink: string;
+  instagramLink: string;
+  twitterLink: string;
 };
 
-export default function SocialMedia({
-  facebook,
-  instagram,
-  twitter
-}: SocialMediaProps) {
+export default function SocialNetwork({
+  facebookLink,
+  instagramLink,
+  twitterLink
+}: SocialNetworkProps) {
   return (
     <div className="flex gap-4">
-      <FacebookLogo link={facebook} />
-      <InstagramLogo link={instagram} />
-      <TwitterLogo link={twitter} />
+      <FacebookIcon link={facebookLink} />
+      <InstagramIcon link={instagramLink} />
+      <TwitterIcon link={twitterLink} />
     </div>
   );
 }
