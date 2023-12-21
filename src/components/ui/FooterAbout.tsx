@@ -1,6 +1,6 @@
-import Title from '@/components/ui/Typography/Title';
-import Text from '@/components/ui/Typography/Text';
-import SocialMedia from '@/components/ui/Icons/SocialMedia';
+import Title from '@/components/ui/Title';
+import Text from '@/components/ui/Text';
+import SocialNetwork from '@/components/ui/SocialNetwork';
 
 export default function About() {
   return (
@@ -12,10 +12,10 @@ export default function About() {
         consequatur aperiam aliquam doloremque, dolorum libero temporibus maxime
         nam quam inventore.
       </Text>
-      <SocialMedia
-        facebook="https://facebook.com"
-        instagram="https://instagram.com"
-        twitter="https//twitter.com"
+      <SocialNetwork
+        facebookLink="https://facebook.com"
+        instagramLink="https://instagram.com"
+        twitterLink="https//twitter.com"
       />
     </div>
   );
