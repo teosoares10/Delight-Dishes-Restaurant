@@ -1,7 +1,7 @@
-import Title from '@/components/ui/Typography/Title';
-import ServiceList from '@/components/ui/RestaurantService/components/ServiceList';
+import Title from '@/components/ui/Title';
+import ServiceList from '@/components/ui/ServiceList';
 
-export default function RestaurantServices() {
+export default function Service() {
   return (
     <div
       className="border-spacing-4 space-y-16 text-center mb-36 px-12"
