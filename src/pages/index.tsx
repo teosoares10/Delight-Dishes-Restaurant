@@ -6,7 +6,7 @@ import Dishes from '@/components/ui/Dish';
 import OurStory from '@/components/ui/OurStory';
 import Head from 'next/head';
 import { ChefApiResponse, ChefAttributes } from '@/@types/type';
-import OurPosts from '@/components/ui/OurPosts';
+import OurPost from '@/components/ui/OurPost';
 
 export default function Home({ attributes }: ChefApiResponse) {
   return (
@@ -21,7 +21,7 @@ export default function Home({ attributes }: ChefApiResponse) {
         <Dishes />
         <Chef attributes={attributes} />
         <BookTable />
-        <OurPosts />
+        <OurPost />
       </main>
     </div>
   );
