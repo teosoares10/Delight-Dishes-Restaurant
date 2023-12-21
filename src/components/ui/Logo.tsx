@@ -1,5 +1,5 @@
-import Text from './Typography/Text';
-import Title from './Typography/Title';
+import Text from './Text';
+import Title from './Title';
 
 export default function Logo() {
   return (
