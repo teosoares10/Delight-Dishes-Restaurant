@@ -1,20 +1,20 @@
-import Text from '@/components/ui/Typography/Text';
-import Title from '@/components/ui/Typography/Title';
+import Text from '@/components/ui/Text';
+import Title from '@/components/ui/Title';
 import { cn } from '@/lib/utils';
 
-type ServicesItemProps = {
+type ServiceItemProps = {
   className?: string;
   icon: JSX.Element;
   title: string;
   description: string;
 };
 
-export default function ServicesItem({
+export default function ServiceItem({
   className,
   icon,
   title,
   description
-}: ServicesItemProps) {
+}: ServiceItemProps) {
   return (
     <div
       className={cn(
