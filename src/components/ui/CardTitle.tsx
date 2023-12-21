@@ -1,4 +1,4 @@
-import Title from './Typography/Title';
+import Title from './Title';
 
 type CardProps = {
   title: string;
