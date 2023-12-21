@@ -1,4 +1,4 @@
-import Title from '@/components/ui/Typography/Title';
+import Title from '@/components/ui/Title';
 import { EnvelopeSimple, MapPin, Phone } from '@phosphor-icons/react';
 import FooterContactWithIcon from './FooterContactWithIcon';
 
