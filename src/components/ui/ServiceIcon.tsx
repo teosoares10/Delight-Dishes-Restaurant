@@ -1,8 +1,8 @@
-import CoffeeIcon from './Coffee';
-import PizzaIcon from './Pizza';
-import MealIcon from './Meal';
+import CoffeeIcon from './CoffeeIcon';
+import PizzaIcon from './PizzaIcon';
+import MealIcon from './MealIcon';
 
-export default function IconService({ icon }: { icon: string }) {
+export default function ServiceIcon({ icon }: { icon: string }) {
   return (
     <div className="text-orange-600" data-testid="icon-service">
       {icon === 'fastfood' ? <PizzaIcon /> : null}
