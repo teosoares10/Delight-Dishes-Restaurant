@@ -7,7 +7,7 @@ import FooterNewsletter from './FooterNewsletter';
 
 export default function Footer() {
   return (
-    <footer className="mt-24 pt-24 space-y-8" data-testid="footer">
+    <footer className="mt-24 pt-24 space-y-8">
       <FooterNewsletter />
 
       <div className="flex justify-between px-12">

@@ -4,7 +4,7 @@ import FooterContactWithIcon from './FooterContactWithIcon';
 
 export default function ContactUs() {
   return (
-    <div className="space-y-4" data-testid="contact-us">
+    <div className="space-y-4">
       <Title className="text-xl text-left">contact us</Title>
       <div className="space-y-4">
         <FooterContactWithIcon

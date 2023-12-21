@@ -12,9 +12,7 @@ export default function ContactWIthIcon({
   return (
     <div className={cn('flex gap-4 items-center', className)}>
       {icon}
-      <span className="block" data-testid="span">
-        {contact}
-      </span>
+      <span className="block">{contact}</span>
     </div>
   );
 }

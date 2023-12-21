@@ -3,9 +3,5 @@ type CardProps = {
 };
 
 export function CardDate({ date }: CardProps) {
-  return (
-    <span className="text-sm" data-testid="date">
-      {date}
-    </span>
-  );
+  return <span className="text-sm">{date}</span>;
 }

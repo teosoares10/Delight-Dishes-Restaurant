@@ -6,9 +6,5 @@ type TextProps = {
 };
 
 export default function Text({ children, className }: TextProps) {
-  return (
-    <p className={cn('', className)} data-testid="text">
-      {children}
-    </p>
-  );
+  return <p className={cn('', className)}>{children}</p>;
 }

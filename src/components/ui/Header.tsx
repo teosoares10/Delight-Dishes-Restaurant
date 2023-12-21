@@ -4,10 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Header() {
   return (
-    <header
-      className="flex justify-between items-center p-4"
-      data-testid="header"
-    >
+    <header className="flex justify-between items-center p-4">
       <Logo />
       <NavBar />
       <Button

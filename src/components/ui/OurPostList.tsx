@@ -3,7 +3,7 @@ import { posts } from '@/constants/Local/posts';
 
 export default function OurPostList() {
   return (
-    <ul className="flex justify-center space-x-4 flex-wrap" data-testid="posts">
+    <ul className="flex justify-center space-x-4 flex-wrap">
       {posts
         .filter((post) => {
           return post.id < 4;

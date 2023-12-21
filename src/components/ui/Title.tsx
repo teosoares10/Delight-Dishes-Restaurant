@@ -12,7 +12,6 @@ export default function Title({ children, className }: TitleProps) {
         ' text-center text-gray-700 font-bold capitalize',
         className
       )}
-      data-testid="title"
     >
       {children}
     </h1>

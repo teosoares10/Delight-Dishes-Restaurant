@@ -4,7 +4,7 @@ import SocialNetwork from '@/components/ui/SocialNetwork';
 
 export default function About() {
   return (
-    <div className="w-[25rem] space-y-4" data-testid="about">
+    <div className="w-[25rem] space-y-4">
       <Title className="text-xl text-left">Logo</Title>
       <Text>
         Lorem ipsum dolor, sitamet consectetur adipisicing elit. Error eius quam

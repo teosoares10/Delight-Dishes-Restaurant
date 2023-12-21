@@ -4,9 +4,5 @@ type CardProps = {
 };
 
 export function CardRoot({ children, className }: CardProps) {
-  return (
-    <div className={className} data-testid="posts">
-      {children}
-    </div>
-  );
+  return <div className={className}>{children}</div>;
 }

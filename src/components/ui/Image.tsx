@@ -23,7 +23,6 @@ export default function Img({
       width={width}
       height={height}
       alt={`${alt}`}
-      data-testid="image"
     />
   );
 }

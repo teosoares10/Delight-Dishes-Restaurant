@@ -4,7 +4,7 @@ import MealIcon from './MealIcon';
 
 export default function ServiceIcon({ icon }: { icon: string }) {
   return (
-    <div className="text-orange-600" data-testid="icon-service">
+    <div className="text-orange-600">
       {icon === 'fastfood' ? <PizzaIcon /> : null}
       {icon === 'meal' ? <MealIcon /> : null}
       {icon === 'coffee' ? <CoffeeIcon /> : null}

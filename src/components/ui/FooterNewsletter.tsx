@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Newsletter() {
   return (
-    <div className="flex h-[10rem] bg-gray-400" data-testid="newsletter">
+    <div className="flex h-[10rem] bg-gray-400">
       <div className="w-[30rem] bg-gray-500 pl-12 pt-14">
         <span className="uppercase" data-testid="span">
           subscribe to our

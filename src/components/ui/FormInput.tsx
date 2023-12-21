@@ -15,7 +15,6 @@ const Input = forwardRef(
         className)
       }
       type={type}
-      data-testid="input"
       {...props}
     />
   )

@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function NavBar({ className }: { className?: string }) {
   return (
     <>
-      <ul className={cn('flex gap-4', className)} data-testid="nav-bar">
+      <ul className={cn('flex gap-4', className)}>
         <li>
           <Link className="hover:text-orange-600" href="/" data-testid="link">
             Home
