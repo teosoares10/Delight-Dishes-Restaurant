@@ -1,11 +1,14 @@
-import { LabelHTMLAttributes } from 'react';
+import { cn } from '@/lib/utils';
 
-type LabelProps = LabelHTMLAttributes<HTMLLabelElement>;
+type LabelProps = {
+  text: string;
+  className?: string;
+};
 
-export default function Label({ htmlFor, children, ...props }: LabelProps) {
+export default function Label({ text, className }: LabelProps) {
   return (
-    <label htmlFor={htmlFor} {...props}>
-      {children}
+    <label htmlFor={text} className={cn('', className)}>
+      {text}
     </label>
   );
 }
