@@ -1,14 +1,14 @@
 import { services } from '@/constants/Local/services';
-import IconService from '../Icons';
-import ServicesItem from '../ServicesItem';
+import ServiceIcon from './ServiceIcon';
+import ServiceItem from './ServiceItem';
 
 export default function ServiceList() {
   return (
     <div className="flex justify-between" data-testid="service-list">
       {services.map((service) => (
-        <ServicesItem
+        <ServiceItem
           key={service.id}
-          icon={<IconService icon={service.type} />}
+          icon={<ServiceIcon icon={service.type} />}
           title={service.title}
           description={service.description}
         />
