@@ -2,8 +2,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import DishList from './DishList';
-import Title from '@/components/ui/Typography/Title';
-import Text from '@/components/ui/Typography/Text';
+import Title from '@/components/ui/Title';
+import Text from '@/components/ui/Text';
 
 export default function Dishes() {
   return (
