@@ -1,6 +1,6 @@
-import Title from '@/components/ui/Typography/Title';
+import Title from '@/components/ui/Title';
 import { ChefApiResponse, ChefAttributes } from '@/@types/type';
-import SocialMedia from '@/components/ui/Icons/SocialMedia';
+import SocialNetwork from '@/components/ui/SocialNetwork';
 import { Card } from './Card';
 
 export default function Chef({ attributes }: ChefApiResponse) {
@@ -21,10 +21,10 @@ export default function Chef({ attributes }: ChefApiResponse) {
             />
             <Card.Title className="text-2xl text-left" title={chef.name} />
             <span className="block capitalize">{chef.role}</span>
-            <SocialMedia
-              facebook={chef.facebook}
-              instagram={chef.instagram}
-              twitter={chef.twitter}
+            <SocialNetwork
+              facebookLink={chef.facebook}
+              instagramLink={chef.instagram}
+              twitterLink={chef.twitter}
             />
           </Card.Root>
         ))}
