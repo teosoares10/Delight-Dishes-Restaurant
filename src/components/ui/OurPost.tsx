@@ -1,4 +1,4 @@
-import Title from './Typography/Title';
+import Title from './Title';
 import OurPostList from './OurPostList';
 
 export default function OurPosts() {
