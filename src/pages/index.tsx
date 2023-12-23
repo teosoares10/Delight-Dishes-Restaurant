@@ -1,4 +1,4 @@
-import RestaurantServices from '@/components/ui/RestaurantService';
+import Service from '@/components/ui/Service';
 import Hero from '@/components/ui/Hero';
 import BookTable from '@/components/ui/BookTable';
 import Chef from '@/components/ui/Chef';
@@ -17,7 +17,7 @@ export default function Home({ attributes }: ChefApiResponse) {
       <main>
         <Hero />
         <OurStory />
-        <RestaurantServices />
+        <Service />
         <Dishes />
         <Chef attributes={attributes} />
         <BookTable />
