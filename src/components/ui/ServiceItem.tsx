@@ -18,7 +18,7 @@ export default function ServiceItem({
   return (
     <div
       className={cn(
-        'flex flex-col justify-center w-[24rem] h-[14rem] space-y-2 px-4 py-2 border-orange-400 border',
+        'flex flex-col justify-center w-[24rem] h-[14rem] space-y-2 px-4 py-2',
         className
       )}
     >
