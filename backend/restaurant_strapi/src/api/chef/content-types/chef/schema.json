@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chefs",
+  "info": {
+    "singularName": "chef",
+    "pluralName": "chefs",
+    "displayName": "Chef",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "Alt": {
+      "type": "string"
+    }
+  }
+}
