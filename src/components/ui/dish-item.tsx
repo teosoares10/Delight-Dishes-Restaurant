@@ -1,7 +1,7 @@
-import { cn } from '@/lib/utils';
+import { cn } from 'src/lib/utils';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import Title from '@/components/ui/Title';
+import { Button } from 'src/components/ui/button';
+import Title from '@/components/ui/title';
 
 type DishItemProps = {
   className?: string;
