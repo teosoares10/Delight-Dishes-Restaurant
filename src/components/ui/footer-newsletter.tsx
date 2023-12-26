@@ -1,4 +1,4 @@
-import Title from '@/components/ui/Title';
+import Title from '@/components/ui/title';
 import { Button } from '@/components/ui/button';
 
 export default function Newsletter() {
