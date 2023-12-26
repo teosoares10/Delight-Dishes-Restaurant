@@ -1,5 +1,5 @@
-import Text from './Text';
-import Title from './Title';
+import Text from '@/components/ui/text';
+import Title from '@/components/ui/title';
 
 export default function Logo() {
   return (
