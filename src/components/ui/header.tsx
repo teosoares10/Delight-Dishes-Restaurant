@@ -1,5 +1,5 @@
-import Logo from '@/components/ui/Logo';
-import NavBar from '@/components/ui/Nav';
+import Logo from '@/components/ui/logo';
+import NavBar from '@/components/ui/nav';
 import { Button } from '@/components/ui/button';
 
 export default function Header() {
