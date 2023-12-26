@@ -1,5 +1,5 @@
-import Text from '@/components/ui/Text';
-import Title from '@/components/ui/Title';
+import Text from '@/components/ui/text';
+import Title from '@/components/ui/title';
 import { cn } from '@/lib/utils';
 
 type ServiceItemProps = {
