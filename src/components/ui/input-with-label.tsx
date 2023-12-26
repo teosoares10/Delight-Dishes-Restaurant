@@ -1,6 +1,6 @@
-import { cn } from '@/lib/utils';
-import Input from './FormInput';
-import Label from './FormLabel';
+import { cn } from 'src/lib/utils';
+import Input from '@/components/ui/input';
+import Label from '@/components/ui/label';
 
 type InputWithLabelProps = {
   label: string;
