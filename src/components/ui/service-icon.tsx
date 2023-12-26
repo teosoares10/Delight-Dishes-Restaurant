@@ -1,6 +1,6 @@
-import CoffeeIcon from './CoffeeIcon';
-import PizzaIcon from './PizzaIcon';
-import MealIcon from './MealIcon';
+import CoffeeIcon from '@/components/ui/coffee-icon';
+import PizzaIcon from '@/components/ui/pizza-icon';
+import MealIcon from '@/components/ui/meal-icon';
 
 export default function ServiceIcon({ icon }: { icon: string }) {
   return (
