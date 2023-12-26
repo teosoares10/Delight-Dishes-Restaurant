@@ -1,5 +1,5 @@
-import Title from '@/components/ui/Title';
-import ServiceList from '@/components/ui/ServiceList';
+import Title from '@/components/ui/title';
+import ServiceList from '@/components/ui/service-list';
 
 export default function Service() {
   return (
