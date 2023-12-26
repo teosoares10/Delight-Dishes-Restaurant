@@ -1,4 +1,4 @@
-import Text from './Text';
+import Text from '@/components/ui/text';
 
 type CardProps = {
   category: string;
