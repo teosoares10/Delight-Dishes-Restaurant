@@ -1,6 +1,6 @@
-import Title from '@/components/ui/Title';
+import Title from '@/components/ui/title';
 import { EnvelopeSimple, MapPin, Phone } from '@phosphor-icons/react';
-import FooterContactWithIcon from './FooterContactWithIcon';
+import FooterContactWithIcon from '@/components/ui/footer-contact-with-icon';
 
 export default function ContactUs() {
   return (
