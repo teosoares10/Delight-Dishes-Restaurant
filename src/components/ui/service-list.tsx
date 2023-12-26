@@ -1,6 +1,6 @@
-import { services } from '@/constants/Local/services';
-import ServiceIcon from './ServiceIcon';
-import ServiceItem from './ServiceItem';
+import { services } from 'src/constants/Local/services';
+import ServiceIcon from '@/components/ui/service-icon';
+import ServiceItem from '@/components/ui/service-item';
 
 export default function ServiceList() {
   return (
