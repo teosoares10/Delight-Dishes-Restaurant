@@ -1,4 +1,4 @@
-import Img from './Image';
+import Img from '@/components/ui/image';
 
 type CardProps = {
   className?: string;
