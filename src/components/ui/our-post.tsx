@@ -1,5 +1,5 @@
-import Title from './Title';
-import OurPostList from './OurPostList';
+import Title from '@/components/ui/title';
+import OurPostList from '@/components/ui/our-post-list';
 
 export default function OurPosts() {
   return (
