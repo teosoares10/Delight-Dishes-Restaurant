@@ -1,9 +1,9 @@
-import FooterContactUs from './FooterContactUs';
-import FooterOpenTime from './FooterOpenTime';
-import FooterAbout from './FooterAbout';
-import FooterMenu from './FooterMenu';
-import FooterCopyright from './FooterCopyright';
-import FooterNewsletter from './FooterNewsletter';
+import FooterContactUs from '@/components/ui/footer-contact-us';
+import FooterOpenTime from '@/components/ui/footer-open-time';
+import FooterAbout from '@/components/ui/footer-about';
+import FooterMenu from '@/components/ui/footer-menu';
+import FooterCopyright from '@/components/ui/footer-copyright';
+import FooterNewsletter from '@/components/ui/footer-newsletter';
 
 export default function Footer() {
   return (
