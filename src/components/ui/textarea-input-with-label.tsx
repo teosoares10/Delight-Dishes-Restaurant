@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
-import Label from './FormLabel';
-import TextareaInput from './FormTextareaInput';
+import Label from '@/components/ui/label';
+import TextareaInput from '@/components/ui/textarea-input';
 
 type InputWithLabelProps = {
   label: string;
