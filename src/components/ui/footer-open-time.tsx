@@ -1,4 +1,4 @@
-import Title from '@/components/ui/Title';
+import Title from '@/components/ui/title';
 
 export default function OpenTime() {
   return (
