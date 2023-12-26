@@ -1,4 +1,4 @@
-import Title from './Title';
+import Title from '@/components/ui/title';
 
 type CardProps = {
   title: string;
