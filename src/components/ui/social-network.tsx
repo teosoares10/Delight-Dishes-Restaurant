@@ -1,6 +1,6 @@
-import FacebookIcon from './FacebookIcon';
-import InstagramIcon from './InstagramIcon';
-import TwitterIcon from './TwitterIcon';
+import FacebookIcon from '@/components/ui/facebook-icon';
+import InstagramIcon from '@/components/ui/instagram-icon';
+import TwitterIcon from '@/components/ui/twitter-icon';
 
 type SocialNetworkProps = {
   facebookLink: string;
