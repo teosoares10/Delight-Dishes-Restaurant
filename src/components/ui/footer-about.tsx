@@ -1,6 +1,6 @@
-import Title from '@/components/ui/Title';
-import Text from '@/components/ui/Text';
-import SocialNetwork from '@/components/ui/SocialNetwork';
+import Title from '@/components/ui/title';
+import Text from '@/components/ui/text';
+import SocialNetwork from '@/components/ui/social-network';
 
 export default function About() {
   return (
