@@ -1,5 +1,5 @@
-import { Card } from '@/components/ui/Card';
-import { posts } from '@/constants/Local/posts';
+import { Card } from '@/components/ui/card';
+import { posts } from 'src/constants/Local/posts';
 
 export default function OurPostList() {
   return (
