@@ -1,5 +1,5 @@
-import BookTableForm from './BookTableForm';
-import Title from './Title';
+import BookTableForm from '@/components/ui/book-table-form';
+import Title from '@/components/ui/title';
 
 export default function BookTable() {
   return (
