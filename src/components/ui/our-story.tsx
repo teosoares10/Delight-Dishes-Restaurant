@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Img from './Image';
-import Text from '@/components/ui/Text';
-import Title from '@/components/ui/Title';
+import Img from '@/components/ui/image';
+import Text from '@/components/ui/text';
+import Title from '@/components/ui/title';
 import { Button } from '@/components/ui/button';
 
 export default function OurStory() {
