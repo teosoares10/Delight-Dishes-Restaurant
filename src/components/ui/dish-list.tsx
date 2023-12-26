@@ -1,6 +1,6 @@
-import Img from '@/components/ui/Image';
-import dishes from '@/constants/Local/dishes';
-import DishItem from './DishItem';
+import Img from '@/components/ui/image';
+import dishes from 'src/constants/Local/dishes';
+import DishItem from '@/components/ui/dish-item';
 
 export default function DishList({ category }: { category: string }) {
   return (
