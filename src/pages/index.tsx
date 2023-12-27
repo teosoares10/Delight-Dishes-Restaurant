@@ -1,12 +1,12 @@
-import Service from '@/components/ui/Service';
-import Hero from '@/components/ui/Hero';
-import BookTable from '@/components/ui/BookTable';
-import Chef from '@/components/ui/Chef';
-import Dishes from '@/components/ui/Dish';
-import OurStory from '@/components/ui/OurStory';
+import Service from '@/components/ui/service';
+import Hero from '@/components/ui/hero';
+import BookTable from '@/components/ui/book-table';
+import Chef from '@/components/ui/chef';
+import Dishes from '@/components/ui/dish';
+import OurStory from '@/components/ui/our-story';
 import Head from 'next/head';
 import { ChefApiResponse, ChefAttributes } from '@/@types/type';
-import OurPost from '@/components/ui/OurPost';
+import OurPost from '@/components/ui/our-post';
 
 export default function Home({ attributes }: ChefApiResponse) {
   return (
