@@ -10,7 +10,10 @@ type NavItemProps = {
 export function NavItem({ className, href, text }: NavItemProps) {
   return (
     <li>
-      <Link className={(cn('hover:text-orange-600'), className)} href={href}>
+      <Link
+        className={(cn('hover:text-orange-600 capitalize'), className)}
+        href={href}
+      >
         {text}
       </Link>
     </li>
