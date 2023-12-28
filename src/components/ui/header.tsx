@@ -9,6 +9,9 @@ export default function Header() {
       <Logo />
       <NavBar />
       <div className="flex">
+        <Link href="/signIn" className="capitalize">
+          sign in
+        </Link>
         <Button
           className="text-white hover:text-orange-500 border border-orange-500 bg-orange-500"
           asChild
