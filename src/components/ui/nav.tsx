@@ -1,47 +1,17 @@
-'use client';
-
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
+import { NavItem } from './nav-item';
 
 export default function NavBar({ className }: { className?: string }) {
   return (
     <>
       <ul className={cn('flex gap-4', className)}>
-        <li>
-          <Link className="hover:text-orange-600" href="/">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link className="hover:text-orange-600" href="/aboutUs">
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link className="hover:text-orange-600" href="/ourMenu">
-            Our Menu
-          </Link>
-        </li>
-        <li>
-          <Link className="hover:text-orange-600" href="/gallery">
-            Gallery
-          </Link>
-        </li>
-        <li>
-          <Link className="hover:text-orange-600" href="/recipe">
-            Recipe
-          </Link>
-        </li>
-        <li>
-          <Link className="hover:text-orange-600" href="/blog">
-            Blog
-          </Link>
-        </li>
-        <li>
-          <Link className="hover:text-orange-600" href="/contact">
-            Contact
-          </Link>
-        </li>
+        <NavItem text="home" href="/" />
+        <NavItem text="about us" href="/aboutUs" />
+        <NavItem text="our menu" href="/ourMenu" />
+        <NavItem text="gallery" href="/gallery" />
+        <NavItem text="recipe" href="/recipe" />
+        <NavItem text="blog" href="/blog" />
+        <NavItem text="contact" href="/contact" />
       </ul>
     </>
   );
