@@ -1,0 +1,23 @@
+name: SimplePipeline
+
+on: 
+  push:
+    branches: [main]
+
+jobs:
+  lintTest:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+      - name: Install Dependecies
+        run: |
+          echo "Running Installing Dependecies ..."
+          pnpm install
+      - name: Run Linting
+        run: |
+          echo "Running Linting tests.."
+          pnpm lint
+        env:
+          CI: true
