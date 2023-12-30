@@ -7,9 +7,8 @@ import FooterNewsletter from '@/components/ui/footer-newsletter';
 
 export default function Footer() {
   return (
-    <footer className="mt-24 pt-24 space-y-8">
+    <footer className="pt-24 space-y-8">
       <FooterNewsletter />
-
       <div className="flex justify-between px-12">
         <FooterAbout />
         <FooterMenu />
