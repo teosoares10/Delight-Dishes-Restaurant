@@ -10,29 +10,25 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [15]
+        node-version: 16.x
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-      
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        uses: pnpm/action-setup@v2
         with:
           version: 8
-      - name: Use Node.js ${{ matrix.node-version }}
+        
+      - name: Set up Node
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      
-      - name: Install Dependecies
-      - name: Clone Repository
-        run: |
-          echo "Running Installing Dependecies ..."
-          pnpm install
-      - name: Run Linting
-        run: |
-          echo "Running Linting tests.."
-          pnpm lint
+
+      - name: Install dependencies  
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm lint
+
         env:
           CI: true
