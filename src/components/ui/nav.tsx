@@ -7,6 +7,7 @@ export default function NavBar({ className }: { className?: string }) {
       <ul className={cn('flex gap-4', className)}>
         <NavItem text="home" href="/" />
         <NavItem text="about us" href="/aboutUs" />
+        <NavItem text="order online" href="/orderOnline" />
         <NavItem text="our menu" href="/ourMenu" />
         <NavItem text="gallery" href="/gallery" />
         <NavItem text="recipe" href="/recipe" />
