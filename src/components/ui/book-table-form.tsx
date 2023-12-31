@@ -19,12 +19,23 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
   const handleOnSubmit: SubmitHandler<FormProps> = (data) => console.log(data);
 
   return (
-    <div className="bg-orange-500 text-white px-16 py-12">
+    <div className="bg-white text-orange-500 px-16 py-12">
       <form
         ref={ref}
         onSubmit={handleSubmit(handleOnSubmit)}
-        className="w-[30rem] flex flex-col gap-4"
+        className="w-[20rem] grid gap-4 justify-center items-center"
       >
+        <div className="w-36 grid space-y-2 capitalize">
+          <label htmlFor="">
+            nº of guest <span className="lowercase">(s)</span>{' '}
+          </label>
+          <select name="" id="">
+            <option value="">1 Person</option>
+            <option value="">2 Person</option>
+            <option value="">3 Person</option>
+          </select>
+        </div>
+
         <InputWithLabel
           label="time"
           type="time"
@@ -45,7 +56,9 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
           <FormInputError error={`${errors.date.message}`} />
         ) : null}
 
-        <Button>book a table</Button>
+        <Button className="text-orange-600 border border-orange-600 capitalize hover:bg-orange-600 hover:text-white">
+          book a table
+        </Button>
       </form>
     </div>
     //     <InputWithLabel
