@@ -1,4 +1,4 @@
-import { cn } from 'src/lib/utils';
+import { cn } from '@/lib/utils';
 import Input from '@/components/ui/input';
 import Label from '@/components/ui/label';
 
@@ -18,7 +18,11 @@ export function InputWithLabel({
   return (
     <div className={cn('flex flex-col capitalize', className)}>
       <Label text={label} />
-      <Input type={type} placeholder={placeholder} />
+      <Input
+        type={type}
+        placeholder={placeholder}
+        className="border border-slate-300 focus:outline-orange-600"
+      />
     </div>
   );
 }
