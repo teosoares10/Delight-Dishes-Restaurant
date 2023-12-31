@@ -2,10 +2,16 @@ import { cn } from '@/lib/utils';
 
 export default function InputError({
   className,
-  error
+  error,
+  id
 }: {
   className?: string;
   error: string;
+  id: string;
 }) {
-  return <span className={cn('text-white', className)}>{error}</span>;
+  return (
+    <span id={id} className={cn('text-white', className)}>
+      {error}
+    </span>
+  );
 }
