@@ -16,7 +16,7 @@ export function InputWithLabel({
   placeholder
 }: InputWithLabelProps) {
   return (
-    <div className={cn('', className)}>
+    <div className={cn('flex flex-col capitalize', className)}>
       <Label text={label} />
       <Input type={type} placeholder={placeholder} />
     </div>
