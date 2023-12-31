@@ -10,7 +10,7 @@ export default function InputError({
   id: string;
 }) {
   return (
-    <span id={id} className={cn('text-white', className)}>
+    <span role="alert" id={id} className={cn('text-white', className)}>
       {error}
     </span>
   );
