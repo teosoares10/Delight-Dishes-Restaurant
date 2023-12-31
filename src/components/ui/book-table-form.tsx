@@ -30,7 +30,7 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
           <label htmlFor="">
             nº of guest <span className="lowercase">(s)</span>{' '}
           </label>
-          <select name="" id="">
+          <select name="" id="" className="p-1 focus:outline-orange-600">
             <Option value="1 Person" />
             <Option value="2 Person" />
             <Option value="3 Person" />
