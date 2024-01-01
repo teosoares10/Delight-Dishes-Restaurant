@@ -3,9 +3,18 @@
   <p></p>
 </h1>
 
-## About
+# Delight Dishes Restaurant
 
-**Dilight Dishes Restaurant** Welcome to Flavors Unleashed, a culinary journey that brings the world of exquisite dining to your fingertips. This web application is designed to provide a delightful and seamless experience for restaurant management and culinary exploration.
+Welcome to Flavors Unleashed, a culinary journey that brings the world of exquisite dining to your fingertips. This web application is designed to provide a delightful and seamless experience for restaurant management and culinary exploration.
+
+# Requisites
+Please make sure you have Docker and docker-compose installed in your machine. Please refer here to install them :
+
+  1. [Node](https://nodejs.org/) 
+  2. [npm](https://www.npmjs.com/)
+  3. [PNPM](https://pnpm.io/)
+  3. [Docker](https://www.docker.com/)
+  4. [Docker Compose](https://docs.docker.com/compose/)
 
 ## Tools
 
