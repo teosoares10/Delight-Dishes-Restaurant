@@ -4,8 +4,7 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && pnpm dlx cz --hook || true"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -20,7 +19,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "commit": "cz",
     "test": "jest",
     "prepare": "husky install"
   },
@@ -60,7 +58,6 @@
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
@@ -73,11 +70,6 @@
     "msw": "^2.0.10",
     "prettier": "^3.0.2",
     "ts-node": "^10.9.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "msw": {
     "workerDirectory": "public"
