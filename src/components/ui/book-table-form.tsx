@@ -45,20 +45,22 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
           label="time"
           type="time"
           placeholder="Enter your time"
+          aria-describedby="time-errors"
           {...register('time')}
         />
         {errors.time ? (
-          <FormInputError error={`${errors.time.message}`} />
+          <FormInputError id="time-errors" error={`${errors.time.message}`} />
         ) : null}
 
         <InputWithLabel
           label="date"
           type="date"
           placeholder="Enter your date"
+          aria-describedby="date-erros"
           {...register('date')}
         />
         {errors.date ? (
-          <FormInputError error={`${errors.date.message}`} />
+          <FormInputError id="date-errors" error={`${errors.date.message}`} />
         ) : null}
 
         <Button className="text-orange-600 border border-orange-600 capitalize hover:bg-orange-600 hover:text-white">
