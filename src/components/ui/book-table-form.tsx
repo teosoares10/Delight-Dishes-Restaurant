@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { forwardRef } from 'react';
 import { InputWithLabel } from '@/components/ui/input-with-label';
 import FormInputError from '@/components/ui/input-error';
-import { Option } from './option';
+import { NumberOfGuest } from './number-of-guest';
 
 type FormProps = z.infer<typeof formSchema>;
 
@@ -35,9 +35,9 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
             id="nº of guest"
             className="p-1 focus:outline-orange-600"
           >
-            <Option value="1 Person" />
-            <Option value="2 Person" />
-            <Option value="3 Person" />
+            <NumberOfGuest value="1 Person" />
+            <NumberOfGuest value="2 Person" />
+            <NumberOfGuest value="3 Person" />
           </select>
         </div>
 
