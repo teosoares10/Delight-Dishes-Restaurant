@@ -1,10 +1,10 @@
 import Text from '@/components/ui/text';
 
 type CardProps = {
-  text: string;
+  children: string;
   className?: string;
 };
 
-export function CardContent({ text, className }: CardProps) {
-  return <Text className={className}>{text}</Text>;
+export function CardContent({ children, className }: CardProps) {
+  return <Text className={className}>{children}</Text>;
 }
