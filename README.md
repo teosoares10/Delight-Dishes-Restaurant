@@ -7,8 +7,13 @@
 
 Welcome to Flavors Unleashed, a culinary journey that brings the world of exquisite dining to your fingertips. This web application is designed to provide a delightful and seamless experience for restaurant management and culinary exploration.
 
+# Features
+  - [] recipe Search
+  - [] Payment Checkout
+  - [] Shopping Cart
+
+
 # Requisites
-Please make sure you have Docker and docker-compose installed in your machine. Please refer here to install them :
 
   1. [Node](https://nodejs.org/) 
   2. [npm](https://www.npmjs.com/)
