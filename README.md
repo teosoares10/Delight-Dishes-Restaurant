@@ -28,18 +28,22 @@ Welcome to Flavors Unleashed, a culinary journey that brings the world of exquis
   3. [Docker](https://www.docker.com/)
   4. [Docker Compose](https://docs.docker.com/compose/)
 
-## Tools
+## Techonologies Used
 
-  - [React](https://reactjs.org)
-  - [Next](https://nextjs.org/)
-  - [Tailwind](https://tailwindcss.com/)
-  - [Strapi](https://strapi.io/)
-  - [Zod](https://zod.dev/)
-  - [React-Hook-Form](https://react-hook-form.com/)
-  - [Jest](https://jestjs.io/)
-  - [React-Testing-Libray](https://testing-library.com/)
-  - [Cypress](https:www.cypress.io/)
-  - [Stripe](https://Stripe.com/)
+  - [Next 14 with pageDir](https://nextjs.org/) - _frontend development_
+  - [Tailwind](https://tailwindcss.com/) - _styling
+  - [TypeScript](https://www.typescriptlang.org/) - _type checking_
+  - [StrapiCMS](https://strapi.io/) - _backend_
+  - [Zod](https://zod.dev/) - _validation_
+  - [React-hook-form](https://react-hook-form.com/) - _form management_
+  - [Jest](https://jestjs.io/) - _unit test_
+  - [React-Testing-Libray](https://testing-library.com/) - _testing react component_
+  - [Cypress](https://playwright.dev/) - _end to end test_
+  - [Stripe](https://Stripe.com/) - _payment_
+  - [Prettier](https://prettier.io/) - _code formatter_
+  - [Lint](https://prettier.io/) - _find and fix problems_
+  - [Tanstack-Query](https://tanstack.com/query) - _data fetching_
+  - [Zustand](hhttps://www.npmjs.com/package/zustand?activeTab=readme) - _state management_
 
 ## How Contribute
 
