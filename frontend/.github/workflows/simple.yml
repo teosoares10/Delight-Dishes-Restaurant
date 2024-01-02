@@ -12,6 +12,7 @@ jobs:
       matrix:
         node-version: [16]
     steps:
+      - uses: cd frontend
       - uses: actions/checkout@v3
         
       - name: Set up Node
@@ -39,10 +40,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: cd frontend && pnpm install
+        run: pnpm install
 
       - name: Lint
-        run: cd frontend && pnpm lint
+        run: pnpm lint
 
         env:
           CI: true
