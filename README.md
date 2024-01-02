@@ -31,7 +31,7 @@ Welcome to Flavors Unleashed, a culinary journey that brings the world of exquis
 ## Techonologies Used
 
   - [Next 14 with pageDir](https://nextjs.org/) - _frontend development_
-  - [Tailwind](https://tailwindcss.com/) - _styling
+  - [Tailwind](https://tailwindcss.com/) - _styling_
   - [TypeScript](https://www.typescriptlang.org/) - _type checking_
   - [StrapiCMS](https://strapi.io/) - _backend_
   - [Zod](https://zod.dev/) - _validation schema_
