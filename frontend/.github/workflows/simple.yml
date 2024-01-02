@@ -39,10 +39,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: cd frontend && pnpm install
 
       - name: Lint
-        run: pnpm lint
+        run: cd frontend && pnpm lint
 
         env:
           CI: true
