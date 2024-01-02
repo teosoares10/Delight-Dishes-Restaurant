@@ -12,9 +12,8 @@ jobs:
       matrix:
         node-version: [16]
     steps:
-      - uses: cd frontend
       - uses: actions/checkout@v3
-        
+        run: cd frontend
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
