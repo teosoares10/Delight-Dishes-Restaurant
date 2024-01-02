@@ -45,27 +45,37 @@ Welcome to Flavors Unleashed, a culinary journey that brings the world of exquis
   - [Tanstack-Query](https://tanstack.com/query) - _data fetching_
   - [Zustand](https://www.npmjs.com/package/zustand?activeTab=readme) - _state management_
 
-## How Contribute
+## Installation
+To run the project locally, follow these steps:
 
+  1. Clone the repository:
+  
   ```bash
-    # Clone the project
     $ git clone https://github.com/teosoares10/Delignt-Dishes-Restaurant.git
   ```
+
+  2. Install dependencies for frontend:
+  
   ```bash
-    # Enter directory
-    $ cd restaurant_next
+    $ cd frontend && pnpm install
   ```
+
+  3. Install dependencies for backend:
+
   ```bash
-    # Install the dependecies, if use npm
-    $ npm install
+    $ cd backend && pnpm install
   ```
+
+  4. Starting the backend:
+
   ```bash
-    # Install the dependecies, if use yarn
-    $ yarn
+    $ cd backend && pnpm develop
   ```
+
+  5. Starting the frontend
+
   ```bash
-    # Install the dependecies, if use pnpm
-    $ pnpm install
+    $ cd frontend && pnpm dev
   ```
 
   ## License
