@@ -43,7 +43,7 @@ Welcome to Flavors Unleashed, a culinary journey that brings the world of exquis
   - [Prettier](https://prettier.io/) - _code formatter_
   - [Lint](https://prettier.io/) - _find and fix problems_
   - [Tanstack-Query](https://tanstack.com/query) - _data fetching_
-  - [Zustand](hhttps://www.npmjs.com/package/zustand?activeTab=readme) - _state management_
+  - [Zustand](https://www.npmjs.com/package/zustand?activeTab=readme) - _state management_
 
 ## How Contribute
 
