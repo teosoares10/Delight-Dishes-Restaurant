@@ -41,7 +41,7 @@ Welcome to Flavors Unleashed, a culinary journey that brings the world of exquis
   - [Cypress](https://playwright.dev/) - _end to end test_
   - [Stripe](https://Stripe.com/) - _payment_
   - [Prettier](https://prettier.io/) - _code formatter_
-  - [Lint](https://prettier.io/) - _find and fix problems_
+  - [Lint](https://prettier.io/) - _find and fix problems in js code_
   - [Tanstack-Query](https://tanstack.com/query) - _data fetching_
   - [Zustand](https://www.npmjs.com/package/zustand?activeTab=readme) - _state management_
 
