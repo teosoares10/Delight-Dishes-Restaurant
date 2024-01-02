@@ -34,7 +34,7 @@ Welcome to Flavors Unleashed, a culinary journey that brings the world of exquis
   - [Tailwind](https://tailwindcss.com/) - _styling
   - [TypeScript](https://www.typescriptlang.org/) - _type checking_
   - [StrapiCMS](https://strapi.io/) - _backend_
-  - [Zod](https://zod.dev/) - _validation_
+  - [Zod](https://zod.dev/) - _validation schema_
   - [React-hook-form](https://react-hook-form.com/) - _form management_
   - [Jest](https://jestjs.io/) - _unit test_
   - [React-Testing-Libray](https://testing-library.com/) - _testing react component_
