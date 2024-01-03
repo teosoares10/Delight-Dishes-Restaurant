@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 
 type TitleProps = {
-  children: string;
+  children: React.ReactNode;
   className?: string;
 };
 
