@@ -18,10 +18,7 @@ const formSchema = z.object({
       message: 'Hora invalida'
     }
   ),
-  specialRequest: z.string(),
-  allergiesOrDietaryRestrictions: z.string(),
-  promoCode: z.string(),
-  agreement: z.boolean()
+  specialRequest: z.string()
 });
 
 export default formSchema;
