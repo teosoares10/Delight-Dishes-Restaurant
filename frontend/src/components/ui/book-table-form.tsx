@@ -1,7 +1,7 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import formSchema from '@/validation/FormSchema';
+import formSchema from '@/validation/form-schema';
 import { Button } from '@/components/ui/button';
 import { forwardRef } from 'react';
 import { InputWithLabel } from '@/components/ui/input-with-label';
