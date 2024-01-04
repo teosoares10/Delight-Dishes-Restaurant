@@ -80,4 +80,4 @@ To run the project locally, follow these steps:
 
   ## License
 
-    This project is under the MIT license. See the file [LICENSE]() for more details. 
+    This project is under the MIT license. See the file [MIT](https://rem.mit-license.org) for more details. 
