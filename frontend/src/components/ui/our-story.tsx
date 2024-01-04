@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 export default function OurStory() {
   return (
-    <div className="flex justify-between items-center py-36 px-12">
+    <div className="flex flex-col justify-between items-center py-36 px-12 space-y-28">
       <Title className="text-4xl text-left">our story</Title>
       <div className="flex">
         <Img
