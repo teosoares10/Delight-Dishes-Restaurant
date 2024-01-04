@@ -18,7 +18,7 @@ export default function OurStory() {
         />
         <div className="flex flex-col justify-center items-center space-y-8">
           <Title className="text-4xl text-left">our story</Title>
-          <Text className="w-[35rem]">
+          <Text className="px-8 text-center">
             Born from a passion for culinary excellence, our story began with a
             dream to redefine dining. Every dish tells a tale of creativity and
             craftsmanship, inviting you on a journey through flavor..
