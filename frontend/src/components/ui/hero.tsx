@@ -16,7 +16,10 @@ export default function Hero() {
           tastes, artfully curated to transport you to culinary realms that
           ignite your senses.
         </Text>
-        <Button className="w-40 bg-orange-500 capitalize" variant="link">
+        <Button
+          className="hover:bg-orange-600 hover:text-white text-orange-600 border border-orange-600 capitalize"
+          variant="link"
+        >
           view menu
         </Button>
       </div>
