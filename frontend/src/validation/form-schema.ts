@@ -1,10 +1,10 @@
 import { z } from 'zod';
 
 const formSchema = z.object({
-  fullName: z.string().min(3),
+  fullname: z.string().min(3),
   email: z.string().email(),
   phone: z.string(),
-  numbersOfGuests: z.number().int().positive().max(50),
+  number_of_guests: z.number().int().positive().max(50),
   date: z.coerce
     .date()
     .refine((date) => date >= new Date(), { message: 'Data inválida' }),
@@ -18,7 +18,7 @@ const formSchema = z.object({
       message: 'Hora invalida'
     }
   ),
-  specialRequest: z.string()
+  special_request: z.string()
 });
 
 export default formSchema;
