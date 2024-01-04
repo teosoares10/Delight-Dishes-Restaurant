@@ -24,7 +24,7 @@ export default function Dishes() {
           </Text>
         </div>
         <Button
-          className="hover:bg-transparent hover:border hover:border-white text-white capitalize px-12 rounded-full"
+          className=" hover:bg-orange-600 hover:text-white border border-white hover:border-0 text-white capitalize px-12 rounded-full"
           variant="link"
           asChild
         >
