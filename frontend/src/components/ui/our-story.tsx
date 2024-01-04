@@ -21,10 +21,7 @@ export default function OurStory() {
           <Text className="w-[35rem]">
             Born from a passion for culinary excellence, our story began with a
             dream to redefine dining. Every dish tells a tale of creativity and
-            craftsmanship, inviting you on a journey through flavor. From humble
-            beginnings to a gastronomic haven, our story is a celebration of the
-            extraordinary in every bite. Join us in creating memories, one
-            extraordinary meal at a time.
+            craftsmanship, inviting you on a journey through flavor..
           </Text>
           <Button className="capitalize bg-orange-600" asChild>
             <Link href={``} data-testid="link">
