@@ -23,7 +23,10 @@ export default function OurStory() {
             dream to redefine dining. Every dish tells a tale of creativity and
             craftsmanship, inviting you on a journey through flavor..
           </Text>
-          <Button className="capitalize bg-orange-600" asChild>
+          <Button
+            className="capitalize hover:bg-orange-600 hover:text-white text-orange-600 border border-orange-600"
+            asChild
+          >
             <Link href={``} data-testid="link">
               learn more
             </Link>
