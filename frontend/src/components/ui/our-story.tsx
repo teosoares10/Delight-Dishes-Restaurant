@@ -16,7 +16,7 @@ export default function OurStory() {
           height={450}
           alt=""
         />
-        <div className="space-y-8">
+        <div className="flex flex-col justify-center items-center space-y-8">
           <Title className="text-4xl text-left">our story</Title>
           <Text className="w-[35rem]">
             Born from a passion for culinary excellence, our story began with a
