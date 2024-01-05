@@ -2,7 +2,7 @@ import Title from '@/components/ui/title';
 import { EnvelopeSimple, MapPin, Phone } from '@phosphor-icons/react';
 import FooterContactWithIcon from '@/components/ui/footer-contact-with-icon';
 
-export default function ContactUs() {
+export default function ContactUsInfo() {
   return (
     <div className="space-y-4">
       <Title className="text-xl text-left">contact us</Title>
