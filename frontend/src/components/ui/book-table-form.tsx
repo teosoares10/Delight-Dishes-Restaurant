@@ -2,7 +2,6 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import formSchema from '@/validation/form-schema';
-import { Button } from '@/components/ui/button';
 import { forwardRef } from 'react';
 import { InputWithLabel } from '@/components/ui/input-with-label';
 import FormInputError from '@/components/ui/input-error';
@@ -63,9 +62,12 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
           <FormInputError id="date-errors" error={`${errors.date.message}`} />
         ) : null}
 
-        <Button className="text-orange-600 border border-orange-600 capitalize hover:bg-orange-600 hover:text-white">
+        <button
+          type="submit"
+          className="text-orange-600 border border-orange-600 capitalize hover:bg-orange-600 hover:text-white"
+        >
           book a table
-        </Button>
+        </button>
       </form>
     </div>
     //     <InputWithLabel
