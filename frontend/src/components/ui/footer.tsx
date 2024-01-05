@@ -4,6 +4,7 @@ import FooterAbout from '@/components/ui/footer-about';
 import FooterMenu from '@/components/ui/footer-menu';
 import FooterCopyright from '@/components/ui/footer-copyright';
 import Newsletter from '@/components/ui/newsletter';
+import Title from './title';
 
 export default function Footer() {
   return (
@@ -12,7 +13,10 @@ export default function Footer() {
         <FooterAbout />
         <FooterMenu />
         <div className="space-y-8">
-          <ContactInfo />
+          <div className="space-y-4">
+            <Title className="text-xl text-left">contact us</Title>
+            <ContactInfo />
+          </div>
           <FooterOpenTime />
         </div>
         <Newsletter />
