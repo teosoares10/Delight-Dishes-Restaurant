@@ -16,7 +16,10 @@ export function TextareaInputWithLabel({
   return (
     <div className={cn('', className)}>
       <Label text={label} />
-      <TextareaInput placeholder={placeholder} />
+      <TextareaInput
+        placeholder={placeholder}
+        className="h-[10rem] border border-gray-400 p-1"
+      />
     </div>
   );
 }
