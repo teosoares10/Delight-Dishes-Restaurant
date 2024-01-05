@@ -12,7 +12,7 @@ export default function NavBar({ className }: { className?: string }) {
         <NavItem text="gallery" href="/gallery" />
         <NavItem text="recipe" href="/recipe" />
         <NavItem text="blog" href="/blog" />
-        <NavItem text="contact" href="/contact" />
+        <NavItem text="contact us" href="/contactUs" />
       </ul>
     </>
   );
