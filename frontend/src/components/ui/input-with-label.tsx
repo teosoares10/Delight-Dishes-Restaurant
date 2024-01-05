@@ -4,7 +4,7 @@ import Label from '@/components/ui/label';
 
 type InputWithLabelProps = {
   label: string;
-  type: string;
+  type?: string;
   className?: string;
   placeholder: string;
 };
