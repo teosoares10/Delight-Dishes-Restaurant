@@ -7,16 +7,15 @@ export default function ContactUsInfo() {
     <div className="space-y-4">
       <Title className="text-xl text-left">contact us</Title>
       <div className="space-y-4">
+        <FooterContactWithIcon icon={<MapPin size={20} />} contact="address" />
+
         <FooterContactWithIcon
-          icon={<MapPin size={20} data-testid="map-pin-icon" />}
-          contact="address"
-        />
-        <FooterContactWithIcon
-          icon={<EnvelopeSimple size={20} data-testid="mail-icon" />}
+          icon={<EnvelopeSimple size={20} />}
           contact="teosoares10@gmail.com"
         />
+
         <FooterContactWithIcon
-          icon={<Phone size={20} data-testid="phone-icon" />}
+          icon={<Phone size={20} />}
           contact="(+244) 941477502"
         />
       </div>
