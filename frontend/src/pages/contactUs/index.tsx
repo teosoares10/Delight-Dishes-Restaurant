@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import ContactInfo from '@/components/ui/contact-info';
-import { ContactUsForm } from '@/components/ui/contact-us-form';
+import { GetInTouchForm } from '@/components/ui/get-in-touch-form';
 import Text from '@/components/ui/text';
 import Title from '@/components/ui/title';
 
@@ -32,7 +32,7 @@ export default function ContactUs() {
         <div className="flex gap-8 justify-center items-center h-[35rem]">
           <div className="w-[25rem] h-full space-y-4">
             <Title className="text-2xl text-left">get in touch</Title>
-            <ContactUsForm />
+            <GetInTouchForm />
           </div>
           <div className="h-full space-y-4">
             <Title className="text-2xl text-left uppercase">fqa</Title>
