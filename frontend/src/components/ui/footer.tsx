@@ -1,4 +1,4 @@
-import FooterContactUs from '@/components/ui/footer-contact-us';
+import ContactUsInfo from '@/components/ui/contact-us-info';
 import FooterOpenTime from '@/components/ui/footer-open-time';
 import FooterAbout from '@/components/ui/footer-about';
 import FooterMenu from '@/components/ui/footer-menu';
@@ -12,7 +12,7 @@ export default function Footer() {
         <FooterAbout />
         <FooterMenu />
         <div className="space-y-8">
-          <FooterContactUs />
+          <ContactUsInfo />
           <FooterOpenTime />
         </div>
         <Newsletter />
