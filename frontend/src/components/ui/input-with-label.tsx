@@ -21,7 +21,7 @@ export function InputWithLabel({
       <Input
         type={type}
         placeholder={placeholder}
-        className="border border-slate-300 focus:outline-orange-600"
+        className="border border-slate-300 focus:outline-orange-600 p-1"
       />
     </div>
   );
