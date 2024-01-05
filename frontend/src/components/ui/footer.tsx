@@ -1,4 +1,4 @@
-import ContactInfo from '@/components/ui/contact-us-info';
+import ContactInfo from '@/components/ui/contact-info';
 import FooterOpenTime from '@/components/ui/footer-open-time';
 import FooterAbout from '@/components/ui/footer-about';
 import FooterMenu from '@/components/ui/footer-menu';
