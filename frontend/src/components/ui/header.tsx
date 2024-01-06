@@ -6,8 +6,10 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <header className="flex justify-between items-center p-4">
-      <Logo />
-      <NavBar />
+      <div className="flex items-center gap-8">
+        <Logo />
+        <NavBar />
+      </div>
       <div className="flex items-center gap-4">
         <Link href="/signIn" className="capitalize">
           sign in
