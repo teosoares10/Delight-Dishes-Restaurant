@@ -13,7 +13,7 @@ export default function Header() {
           sign in
         </Link>
         <Button
-          className="text-white hover:text-orange-500 border border-orange-500 bg-orange-500"
+          className="text-orange-500 border border-orange-500 hover:bg-orange-500 hover:text-white"
           asChild
         >
           <a
