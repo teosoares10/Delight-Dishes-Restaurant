@@ -16,7 +16,10 @@ export default function OurStory() {
           alt=""
         />
         <div className="flex flex-col justify-center items-center space-y-8">
-          <Title className="text-4xl text-left">delight dishes</Title>
+          <Title className="flex flex-col text-4xl text-left">
+            delight dishes{' '}
+            <span className="text-center text-xl">our story</span>
+          </Title>
           <Text className="px-8 text-center">
             Born from a passion for culinary excellence, our story began with a
             dream to redefine dining. Every dish tells a tale of creativity and
