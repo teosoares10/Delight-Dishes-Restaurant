@@ -8,7 +8,7 @@ export default function Header() {
     <header className="flex justify-between items-center p-4">
       <Logo />
       <NavBar />
-      <div className="flex">
+      <div className="flex items-center gap-4">
         <Link href="/signIn" className="capitalize">
           sign in
         </Link>
