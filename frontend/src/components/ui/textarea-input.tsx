@@ -1,11 +1,23 @@
-import { TextareaHTMLAttributes } from 'react';
+import { Ref, TextareaHTMLAttributes, forwardRef } from 'react';
 
 type TextareaInputProps = TextareaHTMLAttributes<HTMLTextAreaElement>;
 
-export default function TextareaInput({
-  placeholder,
-  id,
-  ...props
-}: TextareaInputProps) {
-  return <textarea id={id} placeholder={placeholder} {...props}></textarea>;
-}
+const TextareaInput = forwardRef(
+  (
+    { placeholder, id, ...props }: TextareaInputProps,
+    ref: Ref<HTMLTextAreaElement>
+  ) => {
+    return (
+      <textarea
+        ref={ref}
+        id={id}
+        placeholder={placeholder}
+        {...props}
+      ></textarea>
+    );
+  }
+);
+
+TextareaInput.displayName = 'TextareaInput';
+
+export default TextareaInput;
