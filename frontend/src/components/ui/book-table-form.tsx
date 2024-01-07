@@ -4,7 +4,7 @@ import { z } from 'zod';
 import bookTableFormSchema from '@/validation/book-table-form-schema';
 import { forwardRef } from 'react';
 import { InputWithLabel } from '@/components/ui/input-with-label';
-import FormInputError from '@/components/ui/input-error';
+import InputError from '@/components/ui/input-error';
 import { NumberOfGuest } from './number-of-guest';
 
 type BookTableFormProps = z.infer<typeof bookTableFormSchema>;
@@ -51,7 +51,7 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
           {...register('time')}
         />
         {errors.time ? (
-          <FormInputError id="time-errors" error={`${errors.time.message}`} />
+          <InputError id="time-errors" error={`${errors.time.message}`} />
         ) : null}
 
         <InputWithLabel
@@ -62,7 +62,7 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
           {...register('date')}
         />
         {errors.date ? (
-          <FormInputError id="date-errors" error={`${errors.date.message}`} />
+          <InputError id="date-errors" error={`${errors.date.message}`} />
         ) : null}
 
         <button
