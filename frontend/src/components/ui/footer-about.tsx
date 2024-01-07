@@ -15,7 +15,7 @@ export default function About() {
       <SocialNetwork
         facebookLink="https://facebook.com"
         instagramLink="https://instagram.com"
-        twitterLink="https//twitter.com"
+        twitterLink="https://twitter.com"
       />
     </div>
   );
