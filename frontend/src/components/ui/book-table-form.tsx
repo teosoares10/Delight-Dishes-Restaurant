@@ -3,7 +3,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import bookTableFormSchema from '@/validation/book-table-form-schema';
 import { forwardRef } from 'react';
-import { InputWithLabel } from '@/components/ui/input-with-label';
+import InputWithLabel from '@/components/ui/input-with-label';
 import InputError from '@/components/ui/input-error';
 import { NumberOfGuest } from './number-of-guest';
 

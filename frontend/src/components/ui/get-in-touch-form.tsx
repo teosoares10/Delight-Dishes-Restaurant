@@ -1,14 +1,15 @@
 import { z } from 'zod';
-import { InputWithLabel } from './input-with-label';
+import InputWithLabel from './input-with-label';
 import { TextareaInputWithLabel } from './textarea-input-with-label';
 import getInTouchformSchema from '@/validation/get-in-touch-form-schema';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import InputError from './input-error';
+import { forwardRef } from 'react';
 
 type GetInTouchFormProps = z.infer<typeof getInTouchformSchema>;
 
-export function GetInTouchForm() {
+const GetInTouchForm = forwardRef<HTMLFormElement, object>((_, ref) => {
   const {
     register,
     handleSubmit,
@@ -22,7 +23,7 @@ export function GetInTouchForm() {
 
   return (
     <form
-      action=""
+      ref={ref}
       onSubmit={handleSubmit(handleOnSubmit)}
       className="space-y-4"
     >
@@ -63,4 +64,8 @@ export function GetInTouchForm() {
       </button>
     </form>
   );
-}
+});
+
+GetInTouchForm.displayName = 'GetInTouchForm';
+
+export default GetInTouchForm;
