@@ -7,16 +7,19 @@ import { InputWithLabel } from '@/components/ui/input-with-label';
 import FormInputError from '@/components/ui/input-error';
 import { NumberOfGuest } from './number-of-guest';
 
-type FormProps = z.infer<typeof bookTableFormSchema>;
+type BookTableFormProps = z.infer<typeof bookTableFormSchema>;
 
 const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
   const {
     register,
     handleSubmit,
     formState: { errors }
-  } = useForm<FormProps>({ resolver: zodResolver(bookTableFormSchema) });
+  } = useForm<BookTableFormProps>({
+    resolver: zodResolver(bookTableFormSchema)
+  });
 
-  const handleOnSubmit: SubmitHandler<FormProps> = (data) => console.log(data);
+  const handleOnSubmit: SubmitHandler<BookTableFormProps> = (data) =>
+    console.log(data);
 
   return (
     <div className="bg-white text-orange-500 px-16 py-12">
