@@ -1,20 +1,20 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import formSchema from '@/validation/form-schema';
+import bookTableFormSchema from '@/validation/book-table-form-schema';
 import { forwardRef } from 'react';
 import { InputWithLabel } from '@/components/ui/input-with-label';
 import FormInputError from '@/components/ui/input-error';
 import { NumberOfGuest } from './number-of-guest';
 
-type FormProps = z.infer<typeof formSchema>;
+type FormProps = z.infer<typeof bookTableFormSchema>;
 
 const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
   const {
     register,
     handleSubmit,
     formState: { errors }
-  } = useForm<FormProps>({ resolver: zodResolver(formSchema) });
+  } = useForm<FormProps>({ resolver: zodResolver(bookTableFormSchema) });
 
   const handleOnSubmit: SubmitHandler<FormProps> = (data) => console.log(data);
 
