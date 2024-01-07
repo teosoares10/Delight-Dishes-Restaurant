@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const formSchema = z.object({
+const bookTableFormSchema = z.object({
   fullname: z.string().min(3),
   email: z.string().email(),
   phone: z.string(),
@@ -21,4 +21,4 @@ const formSchema = z.object({
   special_request: z.string()
 });
 
-export default formSchema;
+export default bookTableFormSchema;
