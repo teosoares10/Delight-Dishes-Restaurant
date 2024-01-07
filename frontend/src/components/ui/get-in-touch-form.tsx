@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import InputWithLabel from './input-with-label';
-import { TextareaInputWithLabel } from './textarea-input-with-label';
+import TextareaInputWithLabel from './textarea-input-with-label';
 import getInTouchformSchema from '@/validation/get-in-touch-form-schema';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
