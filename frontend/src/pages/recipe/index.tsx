@@ -5,7 +5,7 @@ import Title from '@/components/ui/title';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { RecipeCategoryList } from '@/components/ui/recipe-category-list';
-import { LatestRecipe } from '@/components/ui/latest-recipe';
+import { LatestRecipeList } from '@/components/ui/latest-recipe-list';
 
 export default function Recipes() {
   return (
@@ -43,7 +43,7 @@ export default function Recipes() {
 
       <div className="space-y-4">
         <Title className="text-left text-3xl">latest recipe</Title>
-        <LatestRecipe />
+        <LatestRecipeList />
       </div>
     </div>
   );
