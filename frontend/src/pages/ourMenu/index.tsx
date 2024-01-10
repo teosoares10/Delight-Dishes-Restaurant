@@ -8,7 +8,7 @@ import Title from '@/components/ui/title';
 export default function OurMenu() {
   return (
     <div>
-      <header className="flex justify-between">
+      <header className="flex justify-between border-b border-black">
         <div>
           <Text>best of town</Text>
         </div>
