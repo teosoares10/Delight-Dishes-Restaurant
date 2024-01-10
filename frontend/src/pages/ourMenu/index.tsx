@@ -26,7 +26,7 @@ export default function OurMenu() {
       </header>
 
       <main>
-        <div>
+        <div className="flex justify-between">
           <FoodMenuCard title="main course" menuList={<FoodMenuList />} />
 
           <Card.Root>
