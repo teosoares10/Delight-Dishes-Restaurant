@@ -12,13 +12,14 @@ export default function OurMenu() {
         <div>
           <Text>best of town</Text>
         </div>
-        <Title className="uppercase">
-          <span className="block">the</span>menus
+        <Title className="text-5xl uppercase">
+          <span className="block text-xl">the</span>menus
         </Title>
         <Text className="uppercase text-center">
           <span className="block">open</span>{' '}
           <span className="block">hour</span>
-          <span className="block">10</span> <span className="block">am/pm</span>
+          <span className="block text-5xl">10</span>{' '}
+          <span className="block">am/pm</span>
         </Text>
       </header>
 
