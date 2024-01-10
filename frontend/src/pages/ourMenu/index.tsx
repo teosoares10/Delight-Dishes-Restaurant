@@ -16,7 +16,7 @@ export default function OurMenu() {
         <div>open hour 10 am/pm</div>
       </header>
 
-      <div>
+      <main>
         <div>
           <FoodMenuCard title="main course" menuList={<FoodMenuList />} />
 
@@ -58,7 +58,7 @@ export default function OurMenu() {
             menuList={<FoodMenuList />}
           />
         </div>
-      </div>
+      </main>
     </div>
   );
 }
