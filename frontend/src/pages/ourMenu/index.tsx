@@ -9,7 +9,9 @@ export default function OurMenu() {
   return (
     <div>
       <header className="flex justify-between">
-        <div>best of town</div>
+        <div>
+          <Text>best of town</Text>
+        </div>
         <Title className="uppercase">
           <span className="block">the</span>menus
         </Title>
