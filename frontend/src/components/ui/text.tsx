@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 
 type TextProps = {
-  children: string;
+  children: React.ReactNode;
   className?: string;
 };
 
