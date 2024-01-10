@@ -15,7 +15,7 @@ export default function OurMenu() {
         <Title className="uppercase">
           <span className="block">the</span>menus
         </Title>
-        <Text>
+        <Text className="uppercase text-center">
           <span className="block">open</span>{' '}
           <span className="block">hour</span>
           <span className="block">10</span> <span className="block">am/pm</span>
