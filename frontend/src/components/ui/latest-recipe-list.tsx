@@ -2,7 +2,7 @@ import { Timer } from '@phosphor-icons/react';
 import { Card } from './card';
 import Link from 'next/link';
 
-export function LatestRecipe() {
+export function LatestRecipeList() {
   return (
     <ul className="flex justify-between items-center">
       <li>
