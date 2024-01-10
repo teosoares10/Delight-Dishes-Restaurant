@@ -42,7 +42,7 @@ export default function Recipes() {
       </div>
 
       <div>
-        <Title className="text-left text-5xl">latest recipe</Title>
+        <Title className="text-left text-3xl">latest recipe</Title>
         <LatestRecipe />
       </div>
     </div>
