@@ -11,8 +11,8 @@ export default function OurMenu() {
       <div className="flex justify-between">
         <div>best of town</div>
         <div>
-          <Title>
-            <span>the</span>menus
+          <Title className="uppercase">
+            <span className="block">the</span>menus
           </Title>
         </div>
         <div>open hour 10 am/pm</div>
