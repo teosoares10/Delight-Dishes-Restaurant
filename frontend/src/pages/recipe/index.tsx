@@ -42,7 +42,7 @@ export default function Recipes() {
       </div>
 
       <div>
-        <Title>latest recipe</Title>
+        <Title className="text-left text-5xl">latest recipe</Title>
         <ul className="flex gap-4 justify-center items-center">
           <li>
             <Card.Root>
