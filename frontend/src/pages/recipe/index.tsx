@@ -41,7 +41,7 @@ export default function Recipes() {
         </div>
       </div>
 
-      <div>
+      <div className="space-y-4">
         <Title className="text-left text-3xl">latest recipe</Title>
         <LatestRecipe />
       </div>
