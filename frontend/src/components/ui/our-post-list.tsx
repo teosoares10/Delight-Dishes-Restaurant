@@ -1,30 +1,84 @@
 import { Card } from '@/components/ui/card';
-import { posts } from 'src/constants/Local/posts';
+import Link from 'next/link';
 
 export default function OurPostList() {
   return (
-    <ul className="flex justify-center space-x-4 flex-wrap">
-      {posts
-        .filter((post) => {
-          return post.id < 4;
-        })
-        .map((post) => (
-          <li
-            key={post.id}
-            className="w-96 shadow hover:shadow-xl hover:bg-white/50 delay-150 pb-2"
-            data-testid="post-item"
-          >
-            <Card.Root className="">
-              <Card.Img src={post.img} className="w-full h-[12rem]" />
-              <div className="p-4 space-y-4">
-                <Card.Date date={post.date} />
-                <Card.Title title={post.title} className="text-left text-xl" />
-                <Card.Content text={post.description} />
-                <Card.Action link={`https://google.com`} text="read more" />
-              </div>
-            </Card.Root>
-          </li>
-        ))}
+    <ul className="flex justify-center gap-2 flex-wrap">
+      <li>
+        <Link href={``}>
+          <Card.Root className="relative w-[70rem] h-[15rem]">
+            <Card.Img
+              src={``}
+              // src={`${recentPost?.attributes?.image}`}
+              className="w-full h-full"
+            />
+            <div className="absolute z-10 left-8 bottom-8 w-[15rem] space-y-2">
+              <Card.Category
+                category="desserts"
+                className="text-orange-600 text-lg font-bold"
+              />
+              <Card.Title
+                title="Make something huge"
+                className="text-left text-xl text-white"
+              />
+              <Card.Description
+                description="Lorem ipsom is incredible thing"
+                className="text-left text-white/90"
+              />
+            </div>
+          </Card.Root>
+        </Link>
+      </li>
+      <li>
+        <Link href={``}>
+          <Card.Root className="relative w-[35rem] h-[10rem]">
+            <Card.Img
+              src={``}
+              // src={`${recentPost?.attributes?.image}`}
+              className="w-full h-full"
+            />
+            <div className="absolute z-10 left-8 bottom-8 w-[15rem] space-y-2">
+              <Card.Category
+                category="desserts"
+                className="text-orange-600 text-lg font-bold"
+              />
+              <Card.Title
+                title="Make something huge"
+                className="text-left text-xl text-white"
+              />
+              <Card.Description
+                description="Lorem ipsom is incredible thing"
+                className="text-left text-white/90"
+              />
+            </div>
+          </Card.Root>
+        </Link>
+      </li>
+      <li>
+        <Link href={``}>
+          <Card.Root className="relative w-[35rem] h-[10rem]">
+            <Card.Img
+              src={``}
+              // src={`${recentPost?.attributes?.image}`}
+              className="w-full h-full"
+            />
+            <div className="absolute z-10 left-8 bottom-8 w-[15rem] space-y-2">
+              <Card.Category
+                category="desserts"
+                className="text-orange-600 text-lg font-bold"
+              />
+              <Card.Title
+                title="Make something huge"
+                className="text-left text-xl text-white"
+              />
+              <Card.Description
+                description="Lorem ipsom is incredible thing"
+                className="text-left text-white/90"
+              />
+            </div>
+          </Card.Root>
+        </Link>
+      </li>
     </ul>
   );
 }
