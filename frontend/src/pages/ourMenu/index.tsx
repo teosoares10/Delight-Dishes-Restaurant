@@ -10,7 +10,7 @@ export default function OurMenu() {
     <div>
       <header className="flex justify-between border-b border-black">
         <div>
-          <Text>
+          <Text className="text-2xl uppercase">
             best <span className="block">in town</span>
           </Text>
         </div>
