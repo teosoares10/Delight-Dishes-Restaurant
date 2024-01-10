@@ -1,4 +1,3 @@
-import { Card } from '@/components/ui/card';
 import Input from '@/components/ui/input';
 import Img from '@/components/ui/image';
 import Text from '@/components/ui/text';
@@ -6,6 +5,7 @@ import Title from '@/components/ui/title';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { RecipeCategoryList } from '@/components/ui/recipe-category-list';
+import { LatestRecipe } from '@/components/ui/latest-recipe';
 
 export default function Recipes() {
   return (
@@ -43,35 +43,7 @@ export default function Recipes() {
 
       <div>
         <Title className="text-left text-5xl">latest recipe</Title>
-        <ul className="flex gap-4 justify-center items-center">
-          <li>
-            <Card.Root>
-              <Card.Img src="" />
-              <Card.Title title="" />
-              <div>
-                <Card.Category category="" />
-              </div>
-            </Card.Root>
-          </li>
-          <li>
-            <Card.Root>
-              <Card.Img src="" />
-              <Card.Title title="" />
-              <div>
-                <Card.Category category="" />
-              </div>
-            </Card.Root>
-          </li>
-          <li>
-            <Card.Root>
-              <Card.Img src="" />
-              <Card.Title title="" />
-              <div>
-                <Card.Category category="" />
-              </div>
-            </Card.Root>
-          </li>
-        </ul>
+        <LatestRecipe />
       </div>
     </div>
   );
