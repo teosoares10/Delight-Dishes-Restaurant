@@ -44,7 +44,7 @@ export default function OurMenu() {
           <FoodMenuCard title="food appetizer" menuList={<FoodMenuList />} />
         </div>
 
-        <div>
+        <div className="flex justify-between">
           <FoodMenuCard
             img={<Img src="" />}
             title="pasta"
