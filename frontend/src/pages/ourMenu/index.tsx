@@ -1,7 +1,6 @@
 import { Card } from '@/components/ui/card';
 import { FoodMenuCard } from '@/components/ui/food-menu-card';
 import { FoodMenuList } from '@/components/ui/food-menu-list';
-import Img from '@/components/ui/image';
 import Text from '@/components/ui/text';
 import Title from '@/components/ui/title';
 
@@ -45,11 +44,11 @@ export default function OurMenu() {
         </div>
 
         <div className="flex justify-between">
-          <FoodMenuCard
-            img={<Img src="" />}
-            title="pasta"
-            menuList={<FoodMenuList />}
-          />
+          <Card.Root>
+            <Card.Title title="pasta" />
+            <Card.Img src="" />
+            <Card.Content content={<FoodMenuList />} />
+          </Card.Root>
 
           <div>
             <FoodMenuCard title="food category" menuList={<FoodMenuList />} />
@@ -61,11 +60,11 @@ export default function OurMenu() {
             </div>
           </div>
 
-          <FoodMenuCard
-            img={<Img src="" />}
-            title="coffee"
-            menuList={<FoodMenuList />}
-          />
+          <Card.Root>
+            <Card.Title title="coffee" />
+            <Card.Img src="" />
+            <Card.Content content={<FoodMenuList />} />
+          </Card.Root>
         </div>
       </main>
     </div>
