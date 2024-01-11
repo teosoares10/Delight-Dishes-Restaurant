@@ -48,4 +48,14 @@ describe('<BookTableForm>', () => {
       '2023-12-10'
     );
   });
+
+  describe('tests for submit button', () => {
+    it('should render all messages error when all inputs are not correctly', async () => {
+      render(<BookTableForm ref={ref} />);
+      await userEvent.click(screen.getByRole('button'));
+      expect(screen.getByPlaceholderText('Enter your time')).toHaveValue('');
+      expect(screen.getByPlaceholderText('Enter your date')).toHaveValue('');
+      expect(screen.getAllByRole('alert')).toHaveLength(2);
+    });
+  });
 });
