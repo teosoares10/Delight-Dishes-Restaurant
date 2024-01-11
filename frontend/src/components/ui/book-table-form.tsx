@@ -64,29 +64,29 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
             <NumberOfGuest value="2 Person" />
             <NumberOfGuest value="3 Person" />
           </select>
+
+          <InputWithLabel
+            label="time"
+            type="time"
+            placeholder="Enter your time"
+            aria-describedby="time-errors"
+            {...register('time')}
+          />
+          {errors.time ? (
+            <InputError id="time-errors" error={`${errors.time.message}`} />
+          ) : null}
+
+          <InputWithLabel
+            label="date"
+            type="date"
+            placeholder="Enter your date"
+            aria-describedby="date-erros"
+            {...register('date')}
+          />
+          {errors.date ? (
+            <InputError id="date-errors" error={`${errors.date.message}`} />
+          ) : null}
         </div>
-
-        <InputWithLabel
-          label="time"
-          type="time"
-          placeholder="Enter your time"
-          aria-describedby="time-errors"
-          {...register('time')}
-        />
-        {errors.time ? (
-          <InputError id="time-errors" error={`${errors.time.message}`} />
-        ) : null}
-
-        <InputWithLabel
-          label="date"
-          type="date"
-          placeholder="Enter your date"
-          aria-describedby="date-erros"
-          {...register('date')}
-        />
-        {errors.date ? (
-          <InputError id="date-errors" error={`${errors.date.message}`} />
-        ) : null}
 
         <button
           type="submit"
