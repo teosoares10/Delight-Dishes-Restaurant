@@ -28,6 +28,4 @@ describe('<BookTableForm>', () => {
       ).selected
     ).toBe(true);
   });
-
-  screen.debug;
 });
