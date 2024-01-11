@@ -45,7 +45,7 @@ export default function OurMenu() {
 
         <div className="flex justify-between">
           <Card.Root>
-            <Card.Title title="pasta" />
+            <Card.Title title="pasta" className="text-5xl" />
             <Card.Img src="" />
             <Card.Content content={<FoodMenuList />} />
           </Card.Root>
@@ -61,7 +61,7 @@ export default function OurMenu() {
           </div>
 
           <Card.Root>
-            <Card.Title title="coffee" />
+            <Card.Title title="coffee" className="text-5xl" />
             <Card.Img src="" />
             <Card.Content content={<FoodMenuList />} />
           </Card.Root>
