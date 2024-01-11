@@ -37,4 +37,15 @@ describe('<BookTableForm>', () => {
     );
     expect(screen.getByPlaceholderText('Enter your time')).toHaveValue('10:30');
   });
+
+  it('should allow user set date', async () => {
+    render(<BookTableForm ref={ref} />);
+    await userEvent.type(
+      screen.getByPlaceholderText('Enter your date'),
+      '2023-12-10'
+    );
+    expect(screen.getByPlaceholderText('Enter your date')).toHaveValue(
+      '2023-12-10'
+    );
+  });
 });
