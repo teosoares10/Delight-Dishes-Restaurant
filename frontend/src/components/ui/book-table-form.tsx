@@ -29,6 +29,30 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
         className="w-[20rem] grid gap-4 justify-center items-center"
       >
         <div className="w-36 grid space-y-2 capitalize">
+          <InputWithLabel
+            label="fullname"
+            placeholder="Enter your fullname"
+            aria-describedby="fullname-errors"
+            {...register('fullname')}
+          />
+          {errors.fullname ? (
+            <InputError
+              id="fullname-errors"
+              error={`${errors.fullname.message}`}
+            />
+          ) : null}
+
+          <InputWithLabel
+            label="e-mail"
+            type="email"
+            placeholder="Enter your e-mail"
+            aria-describedby="email-errors"
+            {...register('email')}
+          />
+          {errors.email ? (
+            <InputError id="email-errors" error={`${errors.email.message}`} />
+          ) : null}
+
           <label htmlFor="nº of guest">
             nº of guest <span className="lowercase">(s)</span>{' '}
           </label>
