@@ -26,7 +26,7 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
       <form
         ref={ref}
         onSubmit={handleSubmit(handleOnSubmit)}
-        className="w-[50rem] grid gap-4 justify-center items-center"
+        className="w-[30rem] grid gap-4 justify-center items-center"
       >
         <InputWithLabel
           label="fullname"
@@ -51,19 +51,22 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
         {errors.email ? (
           <InputError id="email-errors" error={`${errors.email.message}`} />
         ) : null}
-        <div className="w-36 grid space-y-2 capitalize">
-          <label htmlFor="nº of guest">
-            nº of guest <span className="lowercase">(s)</span>{' '}
-          </label>
-          <select
-            name="nº of guest"
-            id="nº of guest"
-            className="p-1 focus:outline-orange-600"
-          >
-            <NumberOfGuest value="1 Person" />
-            <NumberOfGuest value="2 Person" />
-            <NumberOfGuest value="3 Person" />
-          </select>
+
+        <div className="flex gap-4 capitalize">
+          <div className="grid">
+            <label htmlFor="nº of guest">
+              nº of guest <span className="lowercase">(s)</span>
+            </label>
+            <select
+              name="nº of guest"
+              id="nº of guest"
+              className="p-1 focus:outline-orange-600"
+            >
+              <NumberOfGuest value="1 Person" />
+              <NumberOfGuest value="2 Person" />
+              <NumberOfGuest value="3 Person" />
+            </select>
+          </div>
 
           <InputWithLabel
             label="time"
@@ -72,9 +75,6 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
             aria-describedby="time-errors"
             {...register('time')}
           />
-          {errors.time ? (
-            <InputError id="time-errors" error={`${errors.time.message}`} />
-          ) : null}
 
           <InputWithLabel
             label="date"
@@ -83,8 +83,23 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
             aria-describedby="date-erros"
             {...register('date')}
           />
+        </div>
+
+        <div className="flex ml-auto">
+          {errors.time ? (
+            <InputError
+              id="time-errors"
+              className="pr-[2.1rem]"
+              error={`${errors.time.message}`}
+            />
+          ) : null}
+
           {errors.date ? (
-            <InputError id="date-errors" error={`${errors.date.message}`} />
+            <InputError
+              id="date-errors"
+              className="pr-16"
+              error={`${errors.date.message}`}
+            />
           ) : null}
         </div>
 
