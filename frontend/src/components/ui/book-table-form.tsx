@@ -105,7 +105,7 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
 
         <button
           type="submit"
-          className="text-orange-600 border border-orange-600 capitalize hover:bg-orange-600 hover:text-white"
+          className="mx-auto mt-4 py-2 px-4 text-orange-600 border border-orange-600 capitalize hover:bg-orange-600 hover:text-white"
         >
           book a table
         </button>
