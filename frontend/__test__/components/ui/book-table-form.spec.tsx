@@ -28,4 +28,13 @@ describe('<BookTableForm>', () => {
       ).selected
     ).toBe(true);
   });
+
+  it('should allow user set time', async () => {
+    render(<BookTableForm ref={ref} />);
+    await userEvent.type(
+      screen.getByPlaceholderText('Enter your time'),
+      '10:30'
+    );
+    expect(screen.getByPlaceholderText('Enter your time')).toHaveValue('10:30');
+  });
 });
