@@ -51,7 +51,7 @@ To run the project locally, follow these steps:
   1. Clone the repository:
   
   ```bash
-    $ git clone https://github.com/teosoares10/Delignt-Dishes-Restaurant.git
+    $ git clone https://github.com/teosoares10/Delight-Dishes-Restaurant.git
   ```
 
   2. Install dependencies for frontend:
