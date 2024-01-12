@@ -25,11 +25,15 @@ export default function OurMenu() {
       </header>
 
       <main>
-        <div className="flex justify-between">
-          <FoodMenuCard title="main course" menuList={<FoodMenuList />} />
+        <div className="flex gap-4 justify-between">
+          <FoodMenuCard
+            className="w-[20rem]"
+            title="main course"
+            menuList={<FoodMenuList />}
+          />
 
           <Card.Root>
-            <Card.Img src="" />
+            <Card.Img src="" className="w-full h-[16rem]" />
             <div className="flex justify-between">
               <Card.Title title="prime sirloin steak" />
               <span>$3</span>
@@ -40,17 +44,21 @@ export default function OurMenu() {
             />
           </Card.Root>
 
-          <FoodMenuCard title="food appetizer" menuList={<FoodMenuList />} />
+          <FoodMenuCard
+            className="w-[20rem]"
+            title="food appetizer"
+            menuList={<FoodMenuList />}
+          />
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex gap-4 justify-between">
           <Card.Root>
             <Card.Title title="pasta" className="text-5xl" />
-            <Card.Img src="" />
+            <Card.Img src="" className="w-full h-[16rem]" />
             <Card.Content content={<FoodMenuList />} />
           </Card.Root>
 
-          <div>
+          <div className="w-[50rem] space-y-8">
             <FoodMenuCard title="food category" menuList={<FoodMenuList />} />
             <FoodMenuCard title="fresh drink" menuList={<FoodMenuList />} />
             <div>
@@ -62,7 +70,7 @@ export default function OurMenu() {
 
           <Card.Root>
             <Card.Title title="coffee" className="text-5xl" />
-            <Card.Img src="" />
+            <Card.Img src="" className="w-full h-[16rem]" />
             <Card.Content content={<FoodMenuList />} />
           </Card.Root>
         </div>
