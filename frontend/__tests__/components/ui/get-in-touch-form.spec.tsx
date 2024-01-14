@@ -20,7 +20,7 @@ describe('<GetInTouchForm />', () => {
       expect(screen.getByPlaceholderText('Enter your email')).toHaveValue('');
       expect(screen.getByPlaceholderText('Enter your message')).toHaveValue('');
       await userEvent.click(screen.getByRole('button'));
-      expect(screen.getAllByRole('Alert')).toHaveLength(2);
+      expect(screen.getAllByRole('alert')).toHaveLength(2);
     });
 
     it('should not submit when name input is empty', async () => {
@@ -35,7 +35,7 @@ describe('<GetInTouchForm />', () => {
       );
       expect(screen.getByPlaceholderText('Enter your message')).toHaveValue('');
       await userEvent.click(screen.getByRole('button'));
-      expect(screen.getByRole('Alert')).toBeVisible();
+      expect(screen.getByRole('alert')).toBeVisible();
     });
 
     it('should not submit when email input is empty', async () => {
@@ -50,7 +50,7 @@ describe('<GetInTouchForm />', () => {
       expect(screen.getByPlaceholderText('Enter your email')).toHaveValue('');
       expect(screen.getByPlaceholderText('Enter your message')).toHaveValue('');
       await userEvent.click(screen.getByRole('button'));
-      expect(screen.getAllByRole('Alert')).toHaveLength(1);
+      expect(screen.getAllByRole('alert')).toHaveLength(1);
     });
   });
 });
