@@ -22,5 +22,20 @@ describe('<GetInTouchForm />', () => {
       await userEvent.click(screen.getByRole('button'));
       expect(screen.getAllByRole('Alert')).toHaveLength(2);
     });
+
+    it('should not submit when name input is empty', async () => {
+      render(<GetInTouchForm ref={ref} />);
+      expect(screen.getByPlaceholderText('Enter your name')).toHaveValue('');
+      await userEvent.type(
+        screen.getByPlaceholderText('Enter your email'),
+        'johndoe@gmail.com'
+      );
+      expect(screen.getByPlaceholderText('Enter your email')).toHaveValue(
+        'jhondoe@gmail.com'
+      );
+      expect(screen.getByPlaceholderText('Enter your message')).toHaveValue('');
+      await userEvent.click(screen.getByRole('button'));
+      expect(screen.getByRole('Alert')).toBeVisible();
+    });
   });
 });
