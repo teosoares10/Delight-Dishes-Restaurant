@@ -35,6 +35,9 @@
         "yes",
         "no"
       ]
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
