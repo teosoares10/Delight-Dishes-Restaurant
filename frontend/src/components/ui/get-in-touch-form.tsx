@@ -41,7 +41,7 @@ const GetInTouchForm = forwardRef<HTMLFormElement, object>((_, ref) => {
       <InputWithLabel
         type="email"
         label="E-mail"
-        placeholder="Enter your name"
+        placeholder="Enter your email"
         className="space-y-1"
         aria-describedby="email-errors"
         {...register('name')}
