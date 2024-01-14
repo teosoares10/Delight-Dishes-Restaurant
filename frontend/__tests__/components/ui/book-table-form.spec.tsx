@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import BookTableForm from '@/components/ui/book-table-form';
 
@@ -56,6 +56,26 @@ describe('<BookTableForm>', () => {
       expect(screen.getByPlaceholderText('Enter your time')).toHaveValue('');
       expect(screen.getByPlaceholderText('Enter your date')).toHaveValue('');
       expect(screen.getAllByRole('alert')).toHaveLength(2);
+    });
+
+    it('should render a message error when time input is empty', async () => {
+      // const handleClick = jest.fn();
+      render(<BookTableForm ref={ref} />);
+
+      expect(screen.getByPlaceholderText('Enter your time')).toHaveValue('');
+
+      await userEvent.type(
+        screen.getByPlaceholderText('Enter your date'),
+        '2023-12-10'
+      );
+
+      expect(screen.getByPlaceholderText('Enter your date')).toHaveValue(
+        '2023-12-10'
+      );
+
+      fireEvent.click(screen.getByRole('button'));
+
+      expect(screen.getByRole('alert')).toBeVisible();
     });
   });
 });
