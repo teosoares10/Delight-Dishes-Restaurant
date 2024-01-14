@@ -49,7 +49,7 @@ describe('<BookTableForm>', () => {
     );
   });
 
-  describe('tests for submit button', () => {
+  describe('tests for submit form', () => {
     it('should render all messages error when all inputs are not correctly', async () => {
       render(<BookTableForm ref={ref} />);
       await userEvent.click(screen.getByRole('button'));
