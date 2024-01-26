@@ -29,15 +29,14 @@
         "category": {
             "type": "string"
         },
-        "Popular": {
-            "type": "enumeration",
-            "enum": [
-                "yes",
-                "no"
-            ]
-        },
         "description": {
             "type": "text"
+        },
+        "orders_amount": {
+            "type": "integer"
+        },
+        "slug": {
+            "type": "string"
         }
     }
 }
