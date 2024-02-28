@@ -46,6 +46,13 @@
         },
         "Alt": {
             "type": "string"
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": [
+                "in progress",
+                "done"
+            ]
         }
     }
 }

@@ -4,7 +4,7 @@
     "info": {
         "singularName": "recipe",
         "pluralName": "recipes",
-        "displayName": "recipe",
+        "displayName": "Recipe",
         "description": ""
     },
     "options": {
@@ -21,7 +21,7 @@
         "slug": {
             "type": "string"
         },
-        "prep_time": {
+        "time_prep": {
             "type": "string"
         },
         "content": {
@@ -40,6 +40,23 @@
                 "sides",
                 "drinks"
             ]
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "ingredients": {
+            "type": "text"
+        },
+        "time_cook": {
+            "type": "string"
+        },
+        "time_total": {
+            "type": "string"
         }
     }
 }

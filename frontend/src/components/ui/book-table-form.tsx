@@ -3,9 +3,10 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import bookTableFormSchema from '@/validation/book-table-form-schema';
 import { forwardRef } from 'react';
-import InputWithLabel from '@/components/ui/input-with-label';
 import InputError from '@/components/ui/input-error';
 import { NumberOfGuest } from './number-of-guest';
+import Label from './label';
+import Input from './input';
 
 type BookTableFormProps = z.infer<typeof bookTableFormSchema>;
 
@@ -28,8 +29,8 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
         onSubmit={handleSubmit(handleOnSubmit)}
         className="w-[30rem] grid gap-4 justify-center items-center"
       >
-        <InputWithLabel
-          label="fullname"
+        <Label text="fullname" />
+        <Input
           placeholder="Enter your fullname"
           aria-describedby="fullname-errors"
           {...register('fullname')}
@@ -41,8 +42,8 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
           />
         ) : null}
 
-        <InputWithLabel
-          label="e-mail"
+        <Label text="e-mail" />
+        <Input
           type="email"
           placeholder="Enter your e-mail"
           aria-describedby="email-errors"
@@ -68,16 +69,16 @@ const BookTableForm = forwardRef<HTMLFormElement, object>((_, ref) => {
             </select>
           </div>
 
-          <InputWithLabel
-            label="time"
+          <Label text="time" />
+          <Input
             type="time"
             placeholder="Enter your time"
             aria-describedby="time-errors"
             {...register('time')}
           />
 
-          <InputWithLabel
-            label="date"
+          <Label text="date" />
+          <Input
             type="date"
             placeholder="Enter your date"
             aria-describedby="date-erros"

@@ -696,6 +696,7 @@ export interface ApiChefChef extends Schema.CollectionType {
     twitter: Attribute.String;
     img: Attribute.String;
     Alt: Attribute.String;
+    status: Attribute.Enumeration<['in progress', 'done']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -769,7 +770,7 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
   info: {
     singularName: 'recipe';
     pluralName: 'recipes';
-    displayName: 'recipe';
+    displayName: 'Recipe';
     description: '';
   };
   options: {
@@ -779,12 +780,16 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
     title: Attribute.String;
     description: Attribute.Text;
     slug: Attribute.String;
-    prep_time: Attribute.String;
+    time_prep: Attribute.String;
     content: Attribute.RichText;
     serves: Attribute.String;
     category: Attribute.Enumeration<
       ['entrees', 'breakfast', 'lunch', 'desserts', 'sides', 'drinks']
     >;
+    image: Attribute.Media;
+    ingredients: Attribute.Text;
+    time_cook: Attribute.String;
+    time_total: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -796,6 +801,43 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::recipe.recipe',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiReservationReservation extends Schema.CollectionType {
+  collectionName: 'reservations';
+  info: {
+    singularName: 'reservation';
+    pluralName: 'reservations';
+    displayName: 'reservation';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    email: Attribute.Email;
+    number_of_guests: Attribute.String;
+    date: Attribute.Date;
+    time: Attribute.Time;
+    slug: Attribute.String;
+    status: Attribute.Enumeration<['cancelled', 'confirmed']>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::reservation.reservation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::reservation.reservation',
       'oneToOne',
       'admin::user'
     > &
@@ -823,6 +865,7 @@ declare module '@strapi/strapi' {
       'api::food.food': ApiFoodFood;
       'api::post.post': ApiPostPost;
       'api::recipe.recipe': ApiRecipeRecipe;
+      'api::reservation.reservation': ApiReservationReservation;
     }
   }
 }

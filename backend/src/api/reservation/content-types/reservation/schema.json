@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "reservation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "number_of_guests": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "cancelled",
+        "confirmed"
+      ]
+    }
+  }
+}
