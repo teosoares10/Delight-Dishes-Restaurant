@@ -1,19 +1,20 @@
 import { cn } from '@/lib/utils';
+import { Slot } from '@radix-ui/react-slot';
 
-type TitleProps = {
-  children: React.ReactNode;
-  className?: string;
+type TitleProps = JSX.IntrinsicElements['h1'] & {
+  asChild?: boolean;
 };
 
-export default function Title({ children, className }: TitleProps) {
+export default function Title({ children, className, asChild }: TitleProps) {
+  const Comp = asChild ? Slot : 'h1';
   return (
-    <h1
+    <Comp
       className={cn(
         ' text-center text-gray-700 font-bold capitalize',
         className
       )}
     >
       {children}
-    </h1>
+    </Comp>
   );
 }
