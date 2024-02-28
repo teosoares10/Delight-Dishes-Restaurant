@@ -5,7 +5,7 @@
     },
     "settings": {
         "next": {
-            "rootDir": "packages/restaurant_next"
+            "rootDir": "packages/Delight-Dishes-Restaurant/frontend"
         }
     },
     "extends": [
