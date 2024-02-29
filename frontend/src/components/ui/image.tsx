@@ -18,7 +18,7 @@ export default function Img({
 }: ImgProps) {
   return (
     <Image
-      className={cn('bg-slate-600', className)}
+      className={cn('bg-slate-600 object-fill', className)}
       src={src}
       width={width}
       height={height}
