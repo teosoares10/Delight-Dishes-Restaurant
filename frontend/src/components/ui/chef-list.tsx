@@ -1,27 +1,28 @@
-import { ChefAttributes } from '@/@types/type';
+import { ChefData, ChefsAttributes } from '@/@types/chef';
 import { Card } from '@/components/ui/card';
 import SocialNetwork from '@/components/ui/social-network';
+import { Suspense } from 'react';
 
-export function ChefList({ chefs }: { chefs: ChefAttributes[] }) {
+export function ChefList({ data }: ChefData) {
   return (
     <>
-      {chefs?.map((chef: ChefAttributes, index: number) => (
-        <Card.Root
-          key={index}
-          className="w-[20rem] space-y-4"
-          data-testid="chef-item"
-        >
-          <Card.Img
-            className="w-full h-full"
-            src={`${chef.img}`}
-            alt={`${chef.alt}`}
-          />
-          <Card.Title className="text-2xl text-left" title={chef.name} />
-          <span className="block capitalize">{chef.role}</span>
+      {data.map((chef: ChefsAttributes, index: number) => (
+        <Card.Root key={index} className="w-[20rem] space-y-4">
+          <Suspense fallback={<div>loading...</div>}>
+            <Card.Img
+              className="w-full h-full"
+              src={chef.attributes.img}
+              alt={`${chef.attributes.alt}`}
+            />
+          </Suspense>
+          <Card.Title className="text-2xl text-left" asChild>
+            <h2>{chef.attributes.name}</h2>
+          </Card.Title>
+          <span className="block capitalize">{chef.attributes.role}</span>
           <SocialNetwork
-            facebookLink={chef.facebook}
-            instagramLink={chef.instagram}
-            twitterLink={chef.twitter}
+            facebookLink={chef.attributes.facebook}
+            instagramLink={chef.attributes.instagram}
+            twitterLink={chef.attributes.twitter}
           />
         </Card.Root>
       ))}
