@@ -6,6 +6,7 @@ import { CardDescription } from '@/components/ui/card-description';
 import { CardImg } from '@/components/ui/card-image';
 import { CardRoot } from '@/components/ui/card-root';
 import { CardTitle } from '@/components/ui/card-title';
+import CardList from './card-list';
 
 export const Card = {
   Root: CardRoot,
@@ -15,5 +16,6 @@ export const Card = {
   Action: CardAction,
   Date: CardDate,
   Description: CardDescription,
-  Category: CardCategory
+  Category: CardCategory,
+  List: CardList
 };
