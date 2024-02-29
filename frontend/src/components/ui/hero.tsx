@@ -1,7 +1,7 @@
 import Img from '@/components/ui/image';
 import Text from '@/components/ui/text';
 import Title from '@/components/ui/title';
-import { Button } from '@/components/ui/button';
+import ButtonLink from './button-link';
 
 export default function Hero() {
   return (
@@ -16,12 +16,7 @@ export default function Hero() {
           tastes, artfully curated to transport you to culinary realms that
           ignite your senses.
         </Text>
-        <Button
-          className="hover:bg-orange-600 hover:text-white text-orange-600 border border-orange-600 capitalize"
-          variant="link"
-        >
-          view menu
-        </Button>
+        <ButtonLink shortDescription="view more" href="/ourMenu" />
       </div>
       <div className="w-[40rem] h-[30rem] bg-gray-500">
         <Img
